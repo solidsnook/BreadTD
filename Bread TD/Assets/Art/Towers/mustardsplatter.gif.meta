@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mustardsplatter_0: -8159509994905880545
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bread3Flipped_0: -8572260160583701418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

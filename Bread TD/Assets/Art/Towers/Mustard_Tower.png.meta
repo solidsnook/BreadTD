@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mustard_Tower_0: -3838162035032533222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
