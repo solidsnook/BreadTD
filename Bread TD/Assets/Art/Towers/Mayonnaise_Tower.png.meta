@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 850dfcfdcaf30b844b7babbcc38a0a39
+guid: 66e165553ba67c94f8d9b214d424088a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5661355869604230457
-    second: Ketchup_Bottle_0
+      213: -2481971270803647377
+    second: Mayonnaise_Tower_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -106,29 +106,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ketchup_Bottle_0
+      name: Mayonnaise_Tower_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 29
         y: 0
-        width: 626
-        height: 626
+        width: 524
+        height: 1016
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7caca2de4d2de61b0800000000000000
-      internalID: -5661355869604230457
+      spriteID: f64160d77444e8dd0800000000000000
+      internalID: -2481971270803647377
       vertices: []
       indices: 
       edges: []
@@ -152,8 +140,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Ketchup_Bottle_0: -5661355869604230457
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 01b1e00649355964eb4a8434aea5f5e0
+guid: 9697e9b22dacbb14295cbdfdccb13ea3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3838162035032533222
-    second: Mustard_Tower_0
+      213: -4610914691076686288
+    second: New_Mustard_Tower_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -106,29 +106,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mustard_Tower_0
+      name: New_Mustard_Tower_0
       rect:
         serializedVersion: 2
-        x: 85
-        y: 29
-        width: 494
-        height: 561
+        x: 29
+        y: 0
+        width: 524
+        height: 1016
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a17de7fe6fb1cbac0800000000000000
-      internalID: -3838162035032533222
+      spriteID: 03e7eb4a48db200c0800000000000000
+      internalID: -4610914691076686288
       vertices: []
       indices: 
       edges: []
@@ -152,8 +140,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Mustard_Tower_0: -3838162035032533222
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
