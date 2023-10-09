@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 607e3d5e74a190641ba9d3159c544b3b
+guid: c988c82fa72b86a4a8de0c73543d7229
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2099673856008872507
-    second: Bread4_0
+      213: 6432317187266699195
+    second: Bread4 1_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -122,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bread4_0
+      name: Bread4 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 531
-        height: 441
+        x: 12
+        y: 39
+        width: 472
+        height: 356
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +136,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5cd9a64a0c57cd2e0800000000000000
-      internalID: -2099673856008872507
+      spriteID: bbfdba5e66e244950800000000000000
+      internalID: 6432317187266699195
       vertices: []
       indices: 
       edges: []
@@ -153,7 +153,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bread4_0: -2099673856008872507
+      Bread4 1_0: 6432317187266699195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
