@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1623411201869087070}
   - component: {fileID: -8888341482513372378}
+  - component: {fileID: 7856456068372877780}
   m_Layer: 0
   m_Name: KetchupTowerPrefab
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 6317985322303790432}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-8888341482513372378
 MonoBehaviour:
@@ -45,12 +46,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d0258741c6df9e44a10baa5fadaad70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackSpeed: 0
-  health: 0
+  damage: 3
+  speed: 3
+  fireRate: 3
+  attackRange: 20
   cost: 0
-  bread: {fileID: -4422210511319579389, guid: 75bbbfa26c423a34cab3d6785d7f0ce3, type: 3}
   KetchupShot: {fileID: 5720070428662026715, guid: 8a82d0c01b0651f4793d6c60d4ffa793, type: 3}
-  selectedTile: {fileID: 0}
+--- !u!58 &7856456068372877780
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2476220520824373327}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 20
 --- !u!1 &5010220424798673206
 GameObject:
   m_ObjectHideFlags: 0
