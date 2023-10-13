@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1623411201869087070}
-  - component: {fileID: -8888341482513372378}
   - component: {fileID: 7856456068372877780}
+  - component: {fileID: -8888341482513372378}
   m_Layer: 0
   m_Name: KetchupTowerPrefab
   m_TagString: Untagged
@@ -32,26 +32,8 @@ Transform:
   m_Children:
   - {fileID: 6317985322303790432}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8888341482513372378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2476220520824373327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d0258741c6df9e44a10baa5fadaad70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 3
-  speed: 3
-  fireRate: 3
-  attackRange: 20
-  cost: 0
-  KetchupShot: {fileID: 5720070428662026715, guid: 8a82d0c01b0651f4793d6c60d4ffa793, type: 3}
 --- !u!58 &7856456068372877780
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -88,6 +70,24 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 20
+--- !u!114 &-8888341482513372378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2476220520824373327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d0258741c6df9e44a10baa5fadaad70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+  speed: 3
+  fireRate: 3
+  attackRange: 20
+  cost: 0
+  KetchupShot: {fileID: 5720070428662026715, guid: 8a82d0c01b0651f4793d6c60d4ffa793, type: 3}
 --- !u!1 &5010220424798673206
 GameObject:
   m_ObjectHideFlags: 0

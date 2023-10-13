@@ -61,18 +61,12 @@ public class KetchupScript : MonoBehaviour
         shot.target = enemy;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("Detected Enemy");
-    }
-
     void OnTriggerStay2D(Collider2D collision)
     {
         // Finds the enemy thats in range and with the tag "Enemy"
         if (collision.CompareTag("Enemy"))
         {
             enemy = collision.gameObject;
-            Debug.Log("Detected Enemy");
         }
         
     }
