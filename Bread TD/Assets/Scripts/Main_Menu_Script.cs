@@ -14,4 +14,9 @@ public class Main_Menu_Script : MonoBehaviour
         TowersMenu.SetActive(true);
         MainMenu.SetActive(false);
     }
+
+    public void QuitButton() 
+    {
+        Application.Quit();
+    }
 }

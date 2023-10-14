@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class Towers_UI_Script : MonoBehaviour
 {
+    public GameObject TowersMenu;
+    public GameObject MainMenu;
+
     public GameObject KetchupDes;
     public GameObject MustardDes;
     public GameObject MayoDes;
-
-    public GameObject OpenDescription;
 
     public void Start()
     {
@@ -18,21 +19,24 @@ public class Towers_UI_Script : MonoBehaviour
         MayoDes.SetActive(false);
     }
 
+    public void BackToMenu()
+    {
+        TowersMenu.SetActive(false);
+        MainMenu.SetActive(true);
+    }
+
     public void KetchupDescription()
     {
         MustardDes.SetActive(true);
-        OpenDescription = MustardDes;
     }
 
     public void MustardDescription()
     {
         KetchupDes.SetActive(true);
-        OpenDescription = KetchupDes;
     }
     public void MayDescription()
     {
         MayoDes.SetActive(true);
-        OpenDescription = MayoDes;
     }
 
     public void CloseDescription(GameObject Description)
