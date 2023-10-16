@@ -27,14 +27,14 @@ public class Towers_UI_Script : MonoBehaviour
 
     public void KetchupDescription()
     {
-        MustardDes.SetActive(true);
+        KetchupDes.SetActive(true);
     }
 
     public void MustardDescription()
     {
-        KetchupDes.SetActive(true);
+        MustardDes.SetActive(true);
     }
-    public void MayDescription()
+    public void MayoDescription()
     {
         MayoDes.SetActive(true);
     }
