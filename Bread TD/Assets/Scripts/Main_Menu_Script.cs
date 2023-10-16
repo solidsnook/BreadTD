@@ -8,14 +8,21 @@ public class Main_Menu_Script : MonoBehaviour
 
     public GameObject TowersMenu;
     public GameObject MainMenu;
+    public GameObject SettingsMenu;
 
-    public void TowerButton()
+    public void TowerMenu()
     {
         TowersMenu.SetActive(true);
         MainMenu.SetActive(false);
     }
 
-    public void QuitButton() 
+    public void SettingMenu()
+    {
+        SettingsMenu.SetActive(true);
+        MainMenu.SetActive(false);
+    }
+
+    public void QuitApplication() 
     {
         Application.Quit();
     }
