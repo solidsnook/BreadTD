@@ -7,13 +7,13 @@ using UnityEngine;
 public class BreadMover : MonoBehaviour
 {
 
-   // private int nextNode = 0;
+    private int nextNode = 0;
 
-    private Bread bs;
+    //public Bread bs;
+    
+    public NodesScript ns;
 
-    private NodesScript ns;
-
-    public int FindIndexOfGameObject(GameObject targetObj)
+    /*public int FindIndexOfGameObject(GameObject targetObj)
     {
         foreach (GameObject mNodes in ns.moverNodes)
         for (int i = 0; i < ns.moverNodes.Length; i++)
@@ -23,9 +23,9 @@ public class BreadMover : MonoBehaviour
         }
 
         return -1;
-    }
+    }*/
 
-[SerializeField] private float moveSpeed;
+    public float moveSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +35,24 @@ public class BreadMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (GameObject mNoders in ns.moverNodes)
+      float stepBread = moveSpeed * Time.deltaTime;
+        if (nextNode == ns.moverNodes.Length)
+        {
+            //end of list
+        }
+        else
+        {
+            Vector3 nextNodePos = ns.moverNodes[nextNode].transform.position; 
+           transform.position = Vector3.MoveTowards(transform.position, nextNodePos, stepBread);
+            if (Vector3.Distance(transform.position, nextNodePos) <= 5) 
+            {
+                nextNode++;
+            }
+        }
+    }
+}
+
+ /* foreach (GameObject mNoders in ns.moverNodes)
         {
             int index = FindIndexOfGameObject(mNoders);
             if (index != -1)
@@ -50,5 +67,4 @@ public class BreadMover : MonoBehaviour
             }
 
         }
-    }
-}
+    } */

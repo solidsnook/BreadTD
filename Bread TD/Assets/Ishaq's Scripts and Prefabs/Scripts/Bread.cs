@@ -18,19 +18,18 @@ public class Bread : MonoBehaviour
 
     public Transform target;
 
+    public float spawnDelay = 5.0f;
+
+    public int currentIndex = 0;
 
     public void SpawnBread()
     {
-        foreach (GameObject preSprites in bSprites)
-        {
-            GameObject EBread = Instantiate(preSprites, spawnPoint.position, Quaternion.identity);
-            breadObjectList.Add(EBread);
-            bSprites = breadObjectList.ToArray();
-        }
+        //StartCoroutine(SpawnBreadWithDelay());
+      
     }
     
     
-    /*public void BreadShallMove()
+/*    public void BreadShallMove()
     {
         foreach (GameObject sprites in bSprites)
         {
@@ -40,7 +39,7 @@ public class Bread : MonoBehaviour
                 {
                     Vector3 distance = sprites.transform.position - mNodes.transform.position;
                     var step = speed * Time.deltaTime;
-                    Vector3.MoveTowards(transform.position, mNodes.transform.position, step);
+                   transform.position = Vector3.MoveTowards(transform.position, mNodes.transform.position, step);
                 }
 
             }
@@ -50,13 +49,34 @@ public class Bread : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawnBread();
+        StartCoroutine(SpawnBreadWithDelay());
     }
+    IEnumerator SpawnBreadWithDelay()
+    {
+        GameObject EBread;
+        while (currentIndex < bSprites.Length)
+        //foreach (GameObject preSprites in bSprites)
+        {
+            Debug.Log("I have spawned");
+            EBread = Instantiate(bSprites[currentIndex], spawnPoint.position, Quaternion.identity);
+            EBread.AddComponent<BreadMover>();
+            EBread.GetComponent<BreadMover>().ns = gameObject.GetComponent<NodesScript>();
+            EBread.GetComponent<BreadMover>().moveSpeed = 1;
 
+            breadObjectList.Add(EBread);
+            //bSprites = breadObjectList.ToArray();
+
+            currentIndex++;
+            yield return new WaitForSeconds(spawnDelay);
+
+        }
+        Debug.Log("I am now waiting for seconds: " + spawnDelay + " seconds has elapsed");
+        Debug.Log("I am now at index: " + currentIndex);
+    }
     // Update is called once per frame
     void Update()
     {
-       //BreadShallMove();
+
     }
 }
 
