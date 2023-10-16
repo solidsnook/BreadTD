@@ -1,12 +1,13 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Towers_UI_Script : MonoBehaviour
+public class UI_Menu_Manager : MonoBehaviour
 {
-    public GameObject TowersMenu;
     public GameObject MainMenu;
+    public GameObject TowersMenu;
+    public GameObject SettingsMenu;
 
     public GameObject KetchupDes;
     public GameObject MustardDes;
@@ -17,12 +18,28 @@ public class Towers_UI_Script : MonoBehaviour
         KetchupDes.SetActive(false);
         MustardDes.SetActive(false);
         MayoDes.SetActive(false);
+
+        MainMenu.SetActive(true);
+        SettingsMenu.SetActive(false);
+        TowersMenu.SetActive(false);
     }
 
-    public void BackToMenu()
+    public void PlayGame()
     {
-        TowersMenu.SetActive(false);
+        //set this to the main game scene
+        SceneManager.LoadScene("Scenes/LevelLayoutTemplate");
+    }
+
+    public void BackToMenu(GameObject CurrentMenu)
+    {
+        CurrentMenu.SetActive(false);
         MainMenu.SetActive(true);
+    }
+
+    public void OpenMenu(GameObject menu)
+    {
+        MainMenu.SetActive(false);
+        menu.SetActive(true);
     }
 
     public void KetchupDescription()
@@ -43,5 +60,10 @@ public class Towers_UI_Script : MonoBehaviour
     {
         Debug.Log("closing description");
         Description.SetActive(false);
+    }
+
+    public void QuitApplication()
+    {
+        Application.Quit();
     }
 }
