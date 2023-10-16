@@ -8,16 +8,18 @@ using UnityEditor.Animations;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class KetchupScript : MonoBehaviour
+public class MayoScript : MonoBehaviour
 {
     // Declaring Variables
-    public float damage = 3f;           // How much damage the shot does
+    public float damage = 10f;          // How much damage the shot does
     public float speed = 3f;            // How fast the shot can move
-    public float fireRate = 3f;         // How fast the tower can shoot
+    public float fireRate = 1f;         // How fast the tower can shoot
     public float attackRange = 20f;     // How far can the enemy be for the tower to shoot
     public float cost = 10f;            // How much the tower costs to place down
-    public GameObject KetchupShot;      // Prefab for the Ketchup Shot
-    
+    public float sellValue;             // How much you can sell the tower for
+    public int towerLevel;              // What tower level the tower is currently on
+    public GameObject MayoShot;      // Prefab for the Mayo Shot
+
     private GameObject enemy;
     private float time = 0f;
 
@@ -25,6 +27,8 @@ public class KetchupScript : MonoBehaviour
     void Update()
     {
         time = time + 1f * Time.deltaTime;
+
+        sellValue = cost / 2 * towerLevel;
 
         // Updates the attackRange variable to the radius of the collider so it can be easily changed
         GetComponent<CircleCollider2D>().radius = attackRange;
@@ -48,16 +52,16 @@ public class KetchupScript : MonoBehaviour
 
         // Play Shooting Animation
         //this.gameObject.GetComponent<AnimatorController>;
-       
-        // Spawn Ketchup Shot
-        GameObject currentShot = Instantiate(KetchupShot, new Vector2(x, y + 1.7f), Quaternion.identity);
-        
+
+        // Spawn Mayo Shot
+        GameObject currentShot = Instantiate(MayoShot, new Vector2(x, y + 1.7f), Quaternion.identity);
+
         // Adding new script to shot
-        KetchupShotScript shot = currentShot.AddComponent<KetchupShotScript>();
+        MayoShotScript shot = currentShot.AddComponent<MayoShotScript>();
 
         // Save speed to new shot script
         shot.shotSpeed = speed;
-        shot.shotDamage = damage;
+        shot.mayoDamage = damage;
         shot.target = enemy;
     }
 
@@ -68,7 +72,6 @@ public class KetchupScript : MonoBehaviour
         {
             enemy = collision.gameObject;
         }
-        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -76,7 +79,7 @@ public class KetchupScript : MonoBehaviour
         // Reset the enemy reference when it exits the trigger.
         if (collision.CompareTag("Enemy"))
         {
-            enemy = null; 
+            enemy = null;
         }
     }
 }

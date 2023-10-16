@@ -7,7 +7,8 @@ public class KetchupShotScript : MonoBehaviour
     // Declaring Variables
     public GameObject target;
     public float shotSpeed;     // How fast the shot can move
-    public float shotDamage;    // How much damage the shot does
+    public float ketchupDamage;    // How much damage the shot does
+   
 
     // Update is called once per frame
     void Update()
@@ -22,6 +23,20 @@ public class KetchupShotScript : MonoBehaviour
             // Move Shot to Bread
             transform.Translate(direction * shotSpeed * Time.deltaTime);
         }
-        else { /* Do Nothing */ } 
+        else 
+        { 
+            Destroy(this.gameObject);
+        } 
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            SimpleMoveScript breadScript = target.GetComponent<SimpleMoveScript>();
+            breadScript.damageTaken = ketchupDamage;
+            Destroy(this.gameObject);
+        }
+        
     }
 }
