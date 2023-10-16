@@ -1,13 +1,26 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "R5CT70AT58W",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "R5CT70AT58W",
+        "name": "com.DefaultCompany.com.unity.template.mobile2D",
+        "processId": 31573,
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 27938,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 31573,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {

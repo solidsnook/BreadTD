@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Griddy_0: 2582333278585846316
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
