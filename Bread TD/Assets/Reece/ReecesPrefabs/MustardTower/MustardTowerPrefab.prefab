@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 6317985322303790432}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &7856456068372877780
 CircleCollider2D:
@@ -82,10 +82,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1189783794ab7914da95383ab315a9a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 5
   speed: 3
   fireRate: 1
   attackRange: 20
+  poisonAmount: 5
   cost: 10
   sellValue: 0
   towerLevel: 0
