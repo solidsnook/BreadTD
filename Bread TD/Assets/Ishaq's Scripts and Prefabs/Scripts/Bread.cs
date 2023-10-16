@@ -8,11 +8,13 @@ using UnityEngine;
 public class Bread : MonoBehaviour
 {
     public float health;
-    public float speed = 1.0f;
+    public float speed;
 
+    //breadMover bread;
+    public List<GameObject> breadObjectList = new List<GameObject>();
     public GameObject[] bSprites;
     public Transform spawnPoint;
-    public GameObject[] MoveNodes;
+    private NodesScript ns;
 
     public Transform target;
 
@@ -22,26 +24,29 @@ public class Bread : MonoBehaviour
         foreach (GameObject preSprites in bSprites)
         {
             GameObject EBread = Instantiate(preSprites, spawnPoint.position, Quaternion.identity);
-            bSprites.Append(EBread);
+            breadObjectList.Add(EBread);
+            bSprites = breadObjectList.ToArray();
         }
     }
-
-    public void BreadShallMove()
+    
+    
+    /*public void BreadShallMove()
     {
         foreach (GameObject sprites in bSprites)
         {
-             foreach (GameObject mNodes in MoveNodes)
-             {
+            foreach (GameObject mNodes in ns.moverNodes)
+            {
                 for (int i = 0; i < bSprites.Length; i++) 
                 {
                     Vector3 distance = sprites.transform.position - mNodes.transform.position;
                     var step = speed * Time.deltaTime;
-                    sprites.transform.position = Vector3.MoveTowards(transform.position, mNodes.transform.position, step);
+                    Vector3.MoveTowards(transform.position, mNodes.transform.position, step);
                 }
 
-             }
+            }
         }
-    }
+    } */
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +56,8 @@ public class Bread : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        BreadShallMove();
+       //BreadShallMove();
     }
 }
+
+

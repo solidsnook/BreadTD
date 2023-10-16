@@ -337,6 +337,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2099916327}
   - component: {fileID: 2099916326}
+  - component: {fileID: 2099916329}
+  - component: {fileID: 2099916328}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -358,15 +360,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   speed: 1
+  breadObjectList: []
   bSprites:
   - {fileID: 5713224909887084786, guid: 6b719a6cc1d0d2448924a3f7f7a170fe, type: 3}
   - {fileID: 5713224909887084786, guid: 18621a5a31dfc554ea44085ac4407456, type: 3}
   - {fileID: 5713224909887084786, guid: dc744483385f3744ea44ffcee36d7be1, type: 3}
   - {fileID: 5713224909887084786, guid: f289f67c225db554ab3afec69e01b2f1, type: 3}
   spawnPoint: {fileID: 790978662}
-  MoveNodes:
-  - {fileID: 1771630354}
-  target: {fileID: 0}
+  target: {fileID: 1771630355}
 --- !u!4 &2099916327
 Transform:
   m_ObjectHideFlags: 0
@@ -382,3 +383,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2099916328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099916325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7121656d28d5a614898bb755a826ed19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moverNodes:
+  - {fileID: 1771630354}
+--- !u!114 &2099916329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099916325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ac3e13c6fdfd047abb72bba17f2c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
