@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5941792762024031454}
   m_Layer: 0
-  m_Name: TempSpawnMa 1
+  m_Name: TempSpawnK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

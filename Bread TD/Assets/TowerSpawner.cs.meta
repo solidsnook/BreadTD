@@ -3,7 +3,10 @@ guid: 19fd1c11e4c04c8409adf8b03c699644
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - TempSpawnK: {fileID: 2127932246529017278, guid: bc9ec8ae685f40a45a29a7e62574b6c0, type: 3}
+  - TempSpawnMu: {fileID: 2127932246529017278, guid: 3c1395753a7d7284794a202003090015, type: 3}
+  - TempSpawnMa: {fileID: 2127932246529017278, guid: d0270483927b4bb43ad090de5327fc6b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
