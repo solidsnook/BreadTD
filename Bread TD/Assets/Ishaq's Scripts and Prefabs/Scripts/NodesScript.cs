@@ -21,12 +21,6 @@ public class NodesScript : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D col)
-    { 
-        
-
-    }
-
     // Update is called once per frame
     void Update()
     {

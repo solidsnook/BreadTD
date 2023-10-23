@@ -7,7 +7,7 @@ using UnityEngine;
 public class BreadMover : MonoBehaviour
 {
 
-    private int nextNode = 0;
+   [SerializeField] private int nextNode = 0;
 
     //public Bread bs;
     
@@ -44,7 +44,7 @@ public class BreadMover : MonoBehaviour
         {
             Vector3 nextNodePos = ns.moverNodes[nextNode].transform.position; 
            transform.position = Vector3.MoveTowards(transform.position, nextNodePos, stepBread);
-            if (Vector3.Distance(transform.position, nextNodePos) <= 5) 
+            if (Vector3.Distance(transform.position, nextNodePos) <= 0) 
             {
                 nextNode++;
             }
