@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +15,11 @@ public class MayoScript : MonoBehaviour
     public float speed = 3f;            // How fast the shot can move
     public float fireRate = 1f;         // How fast the tower can shoot
     public float attackRange = 20f;     // How far can the enemy be for the tower to shoot
+    public float aoe = 4f;              // How big the area of damage is 
     public float cost = 10f;            // How much the tower costs to place down
     public float sellValue;             // How much you can sell the tower for
     public int towerLevel;              // What tower level the tower is currently on
-    public GameObject MayoShot;      // Prefab for the Mayo Shot
+    public GameObject MayoShot;         // Prefab for the Mayo Shot
 
     private GameObject enemy;
     private float time = 0f;
@@ -63,6 +64,7 @@ public class MayoScript : MonoBehaviour
         shot.shotSpeed = speed;
         shot.mayoDamage = damage;
         shot.target = enemy;
+        shot.aoeRange = aoe;
     }
 
     void OnTriggerStay2D(Collider2D collision)

@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 6317985322303790432}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &7856456068372877780
 CircleCollider2D:
@@ -86,6 +86,7 @@ MonoBehaviour:
   speed: 3
   fireRate: 1
   attackRange: 20
+  aoe: 4
   cost: 10
   sellValue: 0
   towerLevel: 0

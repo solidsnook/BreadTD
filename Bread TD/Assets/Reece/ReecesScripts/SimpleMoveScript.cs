@@ -97,6 +97,10 @@ public class SimpleMoveScript : MonoBehaviour
 
     void DoMayoDamage()
     {
-
+        if (damageTaken > 0)
+        {
+            health -= damageTaken;
+            damageTaken = 0;
+        }
     }
 }

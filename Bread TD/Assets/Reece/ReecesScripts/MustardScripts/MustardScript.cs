@@ -66,7 +66,7 @@ public class MustardScript : MonoBehaviour
         shot.target = enemy;
         shot.poisonAmount = poisonAmount;
     }
-
+      
     void OnTriggerStay2D(Collider2D collision)
     {
         // Finds the enemy thats in range and with the tag "Enemy"
