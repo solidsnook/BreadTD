@@ -9,8 +9,6 @@ public class MayoShotScript : MonoBehaviour
     public float shotSpeed;          // How fast the shot can move
     public float mayoDamage;         // How much damage the shot does
     public float aoeRange;                // How big the area of damage is 
-    public GameObject enemyPrefab;
-    public GameObject aoeAreaPrefab;
 
     //private bool isHit = false; 
 
@@ -37,11 +35,17 @@ public class MayoShotScript : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            GameObject currentAoe = Instantiate(aoeAreaPrefab, collision.transform.position, Quaternion.identity);
-            AOEAreaScript aoe = currentAoe.AddComponent<AOEAreaScript>();
+            GameObject aoeAreaPrefab = Resources.Load("AOEAreaPrefab") as GameObject;
 
-            aoe.mayoDamage = mayoDamage;
-            aoe.aoe = aoeRange;
+            if (aoeAreaPrefab != null)
+            {
+                GameObject currentAoe = Instantiate(aoeAreaPrefab, collision.transform.position, Quaternion.identity);
+                AOEAreaScript aoe = currentAoe.AddComponent<AOEAreaScript>();
+
+                aoe.mayoDamage = mayoDamage;
+                aoe.aoe = aoeRange;
+            }
+
             Destroy(this.gameObject);
         }
 
@@ -54,7 +58,7 @@ public class MayoShotScript : MonoBehaviour
         {
             if (collision.CompareTag("Enemy"))
             {
-                SimpleMoveScript bread = collision.GetComponent<SimpleMoveScript>();
+                EnemyHealthSystemScript bread = collision.GetComponent<EnemyHealthSystemScript>();
                 bread.damageTaken = mayoDamage;
                 Destroy(this.gameObject);
             }
@@ -72,7 +76,7 @@ public class MayoShotScript : MonoBehaviour
                 var hitColliders = Physics2D.OverlapCircleAll(transform.position, aoe);
                 foreach (var hitCollider in hitColliders)
                 {
-                    var enemy = hitCollider.GetComponent<SimpleMoveScript>();
+                    var enemy = hitCollider.GetComponent<EnemyHealthSystemScript>();
                     if (enemy)
                     {
                         var closestPoint = hitCollider.ClosestPoint(transform.position);
@@ -84,7 +88,7 @@ public class MayoShotScript : MonoBehaviour
             }
             else
             {
-                var enemy = collision.GetComponent<Collider>().GetComponent<SimpleMoveScript>();
+                var enemy = collision.GetComponent<Collider>().GetComponent<EnemyHealthSystemScript>();
                 if (enemy)
                 {
                     enemy.damageTaken = mayoDamage;

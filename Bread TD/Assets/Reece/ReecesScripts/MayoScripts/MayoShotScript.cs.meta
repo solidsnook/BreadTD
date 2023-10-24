@@ -6,6 +6,7 @@ MonoImporter:
   defaultReferences:
   - target: {instanceID: 0}
   - enemyPrefab: {fileID: 7216701878355965592, guid: 37d3f1f9ea3b2af40b1a6a971b74785f, type: 3}
+  - aoeAreaPrefab: {fileID: 4816063773154275478, guid: 2e4b2deb8efca86449e0ce6f5a2d72ba, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

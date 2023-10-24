@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class SimpleMoveScript : MonoBehaviour
+public class EnemyHealthSystemScript : MonoBehaviour
 {
     public float health = 20f;
     public float moveSpeed = 2.0f; // Adjust the speed of the movement.
@@ -56,7 +56,7 @@ public class SimpleMoveScript : MonoBehaviour
         if (collision.CompareTag("Mustard"))
             damageType = "Mustard";
 
-        if (collision.CompareTag("Mayo"))
+        if (collision.CompareTag("MayoAOE"))
             damageType = "Mayo";
     }
 
@@ -64,6 +64,7 @@ public class SimpleMoveScript : MonoBehaviour
     {
         if (damageTaken > 0)
         {
+            //Debug.Log("Taken Ketchup Damage");
             health -= damageTaken;
             damageTaken = 0;
         }
@@ -73,6 +74,7 @@ public class SimpleMoveScript : MonoBehaviour
     {
         if (damageTaken > 0)
         {
+            //Debug.Log("Taken Mustard Damage");
             if (poisonCounter <= poisonAmount)
             {
                 if (time >= poisonTimer)
@@ -99,6 +101,7 @@ public class SimpleMoveScript : MonoBehaviour
     {
         if (damageTaken > 0)
         {
+            //Debug.Log("Taken Mayo Damage");
             health -= damageTaken;
             damageTaken = 0;
         }

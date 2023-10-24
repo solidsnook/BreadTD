@@ -35,7 +35,7 @@ public class MustardShotScript : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            SimpleMoveScript breadScript = target.GetComponent<SimpleMoveScript>();
+            EnemyHealthSystemScript breadScript = target.GetComponent<EnemyHealthSystemScript>();
             
             if (breadScript.isPoisoned == false)
             {

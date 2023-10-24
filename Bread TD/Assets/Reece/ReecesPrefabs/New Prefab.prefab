@@ -112,12 +112,12 @@ Transform:
   m_GameObject: {fileID: 7216701878355965592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1238573704326839704}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1477080793258260718
 Rigidbody2D:
@@ -212,3 +212,4 @@ MonoBehaviour:
   originalMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   overlayMaterial: {fileID: 2100000, guid: 07169b3de52c4b44bb2fd2ee79f162ff, type: 2}
   spriteRenderer: {fileID: 193281296078198968}
+  isPoisoned: 0

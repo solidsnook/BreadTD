@@ -33,7 +33,7 @@ public class KetchupShotScript : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            SimpleMoveScript breadScript = target.GetComponent<SimpleMoveScript>();
+            EnemyHealthSystemScript breadScript = target.GetComponent<EnemyHealthSystemScript>();
             breadScript.damageTaken = ketchupDamage;
             Destroy(this.gameObject);
         }
