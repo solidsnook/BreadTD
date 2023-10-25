@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2184733536616426167}
   - component: {fileID: 1166550800278444789}
+  - component: {fileID: 5731218070795280502}
   m_Layer: 0
   m_Name: Bread5
   m_TagString: Untagged
@@ -110,8 +111,8 @@ Transform:
   m_GameObject: {fileID: 5713224909887084786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 148019995753330054}
   m_Father: {fileID: 0}
@@ -144,3 +145,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5731218070795280502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5713224909887084786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ac3e13c6fdfd047abb72bba17f2c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextNode: 0
+  ns: {fileID: 0}
+  moveSpeed: 3

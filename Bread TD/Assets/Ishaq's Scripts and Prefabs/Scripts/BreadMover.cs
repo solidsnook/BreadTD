@@ -35,18 +35,21 @@ public class BreadMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      float stepBread = moveSpeed * Time.deltaTime;
-        if (nextNode == ns.moverNodes.Length)
+        if (ns != null)
         {
-            //end of list
-        }
-        else
-        {
-            Vector3 nextNodePos = ns.moverNodes[nextNode].transform.position; 
-           transform.position = Vector3.MoveTowards(transform.position, nextNodePos, stepBread);
-            if (Vector3.Distance(transform.position, nextNodePos) <= 0) 
+            float stepBread = moveSpeed * Time.deltaTime;
+            if (nextNode == ns.moverNodes.Length)
             {
-                nextNode++;
+                //end of list
+            }
+            else
+            {
+                Vector3 nextNodePos = ns.moverNodes[nextNode].transform.position; 
+                transform.position = Vector3.MoveTowards(transform.position, nextNodePos, stepBread);
+                if (Vector3.Distance(transform.position, nextNodePos) <= 0) 
+                {
+                    nextNode++;
+                }
             }
         }
     }

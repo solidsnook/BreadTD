@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  speed: 0
+  GameManager: {fileID: 0}
   breadObjectList: []
   bSprites:
   - {fileID: 5713224909887084786, guid: 6b719a6cc1d0d2448924a3f7f7a170fe, type: 3}
@@ -491,11 +491,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moverNodes:
-  - {fileID: 1275064408}
   - {fileID: 1771630354}
+  - {fileID: 1120322573}
   - {fileID: 2112289957}
   - {fileID: 513006788}
-  - {fileID: 1120322573}
+  - {fileID: 1275064408}
 --- !u!1 &2112289957
 GameObject:
   m_ObjectHideFlags: 0

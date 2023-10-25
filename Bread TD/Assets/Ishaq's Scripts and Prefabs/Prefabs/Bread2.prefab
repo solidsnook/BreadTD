@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2184733536616426167}
   - component: {fileID: 2615272379767973485}
+  - component: {fileID: 3709180029677072872}
   m_Layer: 0
   m_Name: Bread2
   m_TagString: Untagged
@@ -144,3 +145,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3709180029677072872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5713224909887084786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ac3e13c6fdfd047abb72bba17f2c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextNode: 0
+  ns: {fileID: 0}
+  moveSpeed: 3
