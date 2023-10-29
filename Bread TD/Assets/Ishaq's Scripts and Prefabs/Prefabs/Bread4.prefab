@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 1082380771956322730}
   m_Layer: 0
   m_Name: Bread4
-  m_TagString: Untagged
+  m_TagString: breadTougher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6439781710964903159}
   m_Layer: 0
   m_Name: Bread1
-  m_TagString: Untagged
+  m_TagString: breadBasic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextNode: 0
   ns: {fileID: 0}
-  moveSpeed: 5
+  moveSpeed: 2
 --- !u!1 &8975078054857660181
 GameObject:
   m_ObjectHideFlags: 0

@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8608737956968428854}
   m_Layer: 0
   m_Name: Bread3
-  m_TagString: Untagged
+  m_TagString: breadSpeedy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,4 +159,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextNode: 0
   ns: {fileID: 0}
-  moveSpeed: 11
+  moveSpeed: 5

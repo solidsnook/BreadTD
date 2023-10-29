@@ -12,7 +12,7 @@ public class NodesScript : MonoBehaviour
     // provide a reference to the levels script to find the empty spaces that the bread will move along, hope to god that an script can automatically place down nodes on the
     // spaces and it works. (*)(*)__(*)(*) (obviously have this in merge with the levels or main)
 
-    Bread[] bds;
+    Spawn[] spwn;
     
 
     // Start is called before the first frame update

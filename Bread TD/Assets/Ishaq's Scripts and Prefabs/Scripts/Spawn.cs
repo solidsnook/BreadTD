@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-public class Bread : MonoBehaviour
+public class Spawn : MonoBehaviour
 {
     public float health;
     
@@ -27,12 +27,11 @@ public class Bread : MonoBehaviour
     public void SpawnBread(GameObject bread)
     {
         // Take out of here.
-        GameObject EBread; 
-        Debug.Log("I have spawned"); 
-        EBread = Instantiate(bread, spawnPoint.position, Quaternion.identity); 
+        GameObject EBread;
+        Debug.Log("I have spawned");
+        EBread = Instantiate(bread, spawnPoint.position, Quaternion.identity);
         EBread.GetComponent<BreadMover>().ns = gameObject.GetComponent<NodesScript>();
         breadObjectList.Add(EBread);
-        
     }
 
     // Start is called before the first frame update
@@ -47,7 +46,7 @@ public class Bread : MonoBehaviour
     {
         for (int i = 0; i < bSprites.Length; i++)
         {
-            SpawnBread(bSprites[i]);   
+            SpawnBread(bSprites[i]);
             yield return new WaitForSeconds(spawnDelay);
         }
      

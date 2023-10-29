@@ -55,19 +55,4 @@ public class BreadMover : MonoBehaviour
     }
 }
 
- /* foreach (GameObject mNoders in ns.moverNodes)
-        {
-            int index = FindIndexOfGameObject(mNoders);
-            if (index != -1)
-            {
-                Debug.Log("Index is Currently at :" + index);
-                Transform idTransform = ns.moverNodes[index].transform;
-                Vector3 idTransformPosition = idTransform.position;
-            }
-            else
-            {
-                Debug.Log("Index Not Found in array :");
-            }
 
-        }
-    } */
