@@ -12,10 +12,11 @@ public class ButtonControl : MonoBehaviour
     public GameObject CavasOBJ;
     public Button A1;
 
-    public GameObject empty;
+    GameObject empty;
 
     public TowerSpawner spawnCS;
-    public Vector3 LocalPos;
+    Vector3 LocalPos;
+
 
 
     public void Start()
@@ -32,7 +33,10 @@ public class ButtonControl : MonoBehaviour
         empty.transform.SetParent(CavasOBJ.transform, false);
     }
 
-
+    public void DestoryBuy()
+    {
+        Destroy(BuyScreenOBJ);
+    }
 }
 
 
