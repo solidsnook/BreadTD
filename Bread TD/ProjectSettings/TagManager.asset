@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - breadBasic
-  - breadSpeedy
-  - breadTougher
+  - Enemy
+  - Mustard
+  - Ketchup
+  - Mayo
+  - MayoAOE
   layers:
   - Default
   - TransparentFX
