@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework.Interfaces;
+using TreeEditor;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class BreadMover : MonoBehaviour
 {
+    public float health;
 
-   [SerializeField] private int nextNode = 0;
+    [SerializeField] private int nextNode = 0;
 
     //public Bread bs;
     
@@ -25,6 +27,18 @@ public class BreadMover : MonoBehaviour
         return -1;
     }*/
 
+    void bHealthTDamage(int dmgAmount)
+    {
+       health -= dmgAmount;
+        if (health < 0)
+        {
+            die();
+        }
+    }
+    void die()
+    {
+        Destroy(this.gameObject);
+    }
     public float moveSpeed;
     // Start is called before the first frame update
     void Start()

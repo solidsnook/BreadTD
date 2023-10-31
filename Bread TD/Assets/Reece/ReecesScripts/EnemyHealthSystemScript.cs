@@ -7,8 +7,8 @@ using static UnityEngine.GraphicsBuffer;
 public class EnemyHealthSystemScript : MonoBehaviour
 {
     public float health = 20f;
-    public float moveSpeed = 2.0f; // Adjust the speed of the movement.
-    public float upDistance = 10.0f; // Adjust the distance the object moves up and down.
+    //public float moveSpeed = 2.0f; // Adjust the speed of the movement.
+    //public float upDistance = 10.0f; // Adjust the distance the object moves up and down.
     public float damageTaken;
     public int poisonAmount;
     public Material originalMaterial;
@@ -23,15 +23,16 @@ public class EnemyHealthSystemScript : MonoBehaviour
     private int poisonCounter;
     private float time = 0f;
 
+    [SerializeField] private BreadMover BM;
+
     private void Start()
     {
+        BM = GetComponent<BreadMover>();
         startPosition = transform.position;
     }
 
     private void Update()
     {
-        time = time + 1f * Time.deltaTime;
-
         if (damageType == "Ketchup")
             DoKetchupDamage();
         if (damageType == "Mustard")
