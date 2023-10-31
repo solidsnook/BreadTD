@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9225bfb1050930a46b0db90235d8f829
+guid: 6aa2c794cbfb2de4d8617ef143fe4389
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8572260160583701418
-    second: bread3Flipped_0
+      213: -8651470343957311890
+    second: bread3Flipped 1_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -122,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bread3Flipped_0
+      name: bread3Flipped 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 458
-        height: 426
+        y: 22
+        width: 419
+        height: 372
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +136,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65cec2e3dc6390980800000000000000
-      internalID: -8572260160583701418
+      spriteID: e6e09934f8dcfe780800000000000000
+      internalID: -8651470343957311890
       vertices: []
       indices: 
       edges: []
@@ -153,7 +153,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bread3Flipped_0: -8572260160583701418
+      bread3Flipped 1_0: -8651470343957311890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
