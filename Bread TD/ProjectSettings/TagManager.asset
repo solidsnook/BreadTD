@@ -9,6 +9,8 @@ TagManager:
   - Ketchup
   - Mayo
   - MayoAOE
+  - breadBasic
+  - breadSpeedy
   layers:
   - Default
   - TransparentFX

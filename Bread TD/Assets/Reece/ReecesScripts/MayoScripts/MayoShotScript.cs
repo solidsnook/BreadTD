@@ -33,7 +33,7 @@ public class MayoShotScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("breadBasic") || collision.CompareTag("breadSpeedy") || collision.CompareTag("breadICannotRemember"))
         {
             GameObject aoeAreaPrefab = Resources.Load("AOEAreaPrefab") as GameObject;
 
@@ -48,7 +48,6 @@ public class MayoShotScript : MonoBehaviour
 
             Destroy(this.gameObject);
         }
-
     }
 
     /*

@@ -31,12 +31,11 @@ public class KetchupShotScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("breadBasic") || collision.CompareTag("breadSpeedy") || collision.CompareTag("breadICannotRemember"))
         {
             EnemyHealthSystemScript breadScript = target.GetComponent<EnemyHealthSystemScript>();
             breadScript.damageTaken = ketchupDamage;
             Destroy(this.gameObject);
         }
-        
     }
 }

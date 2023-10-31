@@ -68,7 +68,7 @@ public class KetchupScript : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision)
     {
         // Finds the enemy thats in range and with the tag "Enemy"
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("breadBasic") || collision.CompareTag("breadSpeedy") || collision.CompareTag("breadICannotRemember"))
         {
             enemy = collision.gameObject;
         }
@@ -77,9 +77,9 @@ public class KetchupScript : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         // Reset the enemy reference when it exits the trigger.
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("breadBasic") || collision.CompareTag("breadSpeedy") || collision.CompareTag("breadICannotRemember"))
         {
-            enemy = null; 
+            enemy = null;
         }
     }
 }

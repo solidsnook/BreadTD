@@ -33,19 +33,18 @@ public class MustardShotScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("breadBasic") || collision.CompareTag("breadSpeedy") || collision.CompareTag("breadICannotRemember"))
         {
             EnemyHealthSystemScript breadScript = target.GetComponent<EnemyHealthSystemScript>();
-            
+
             if (breadScript.isPoisoned == false)
             {
                 breadScript.damageTaken = mustardDamage;
                 breadScript.poisonAmount = poisonAmount;
                 breadScript.isPoisoned = true;
             }
-           
+
             Destroy(this.gameObject);
         }
-
     }
 }
