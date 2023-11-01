@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class KetchupShotScript : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class KetchupShotScript : MonoBehaviour
             // Direction of closest Bread
             Vector3 direction = target.transform.position - transform.position;
             direction.Normalize();
+
+           // Points Shot towards Bread
+
 
             // Move Shot to Bread
             transform.Translate(direction * shotSpeed * Time.deltaTime);

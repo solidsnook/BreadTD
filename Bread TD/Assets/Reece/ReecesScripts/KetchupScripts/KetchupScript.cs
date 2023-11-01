@@ -19,6 +19,7 @@ public class KetchupScript : MonoBehaviour
     public float sellValue;             // How much you can sell the tower for
     public int towerLevel;              // What tower level the tower is currently on
     public GameObject KetchupShot;      // Prefab for the Ketchup Shot
+    public Animator animator;           // This is the animator for the tower
     
     private GameObject enemy;
     private float time = 0f;
@@ -51,10 +52,10 @@ public class KetchupScript : MonoBehaviour
         float y = this.transform.position.y;
 
         // Play Shooting Animation
-        //this.gameObject.GetComponent<AnimatorController>;
+        animator.SetTrigger("IsShooting?");
        
         // Spawn Ketchup Shot
-        GameObject currentShot = Instantiate(KetchupShot, new Vector2(x, y + 1.7f), Quaternion.identity);
+        GameObject currentShot = Instantiate(KetchupShot, new Vector2(x, y + 1.4f), Quaternion.identity);
         
         // Adding new script to shot
         KetchupShotScript shot = currentShot.AddComponent<KetchupShotScript>();

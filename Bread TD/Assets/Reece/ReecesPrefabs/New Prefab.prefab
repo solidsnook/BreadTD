@@ -211,5 +211,5 @@ MonoBehaviour:
   poisonAmount: 0
   originalMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   overlayMaterial: {fileID: 2100000, guid: 07169b3de52c4b44bb2fd2ee79f162ff, type: 2}
-  spriteRenderer: {fileID: 193281296078198968}
+  spriteRenderer: {fileID: 0}
   isPoisoned: 0
