@@ -1,5 +1,0 @@
-C:/Users/k2111154/Documents/BreadTD/Bread TD/.utmp/RelWithDebInfo/286g112h/arm64-v8a/CMakeFiles/edit_cache.dir
-C:/Users/k2111154/Documents/BreadTD/Bread TD/.utmp/RelWithDebInfo/286g112h/arm64-v8a/CMakeFiles/rebuild_cache.dir
-C:/Users/k2111154/Documents/BreadTD/Bread TD/.utmp/RelWithDebInfo/286g112h/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
-C:/Users/k2111154/Documents/BreadTD/Bread TD/.utmp/RelWithDebInfo/286g112h/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
-C:/Users/k2111154/Documents/BreadTD/Bread TD/.utmp/RelWithDebInfo/286g112h/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
