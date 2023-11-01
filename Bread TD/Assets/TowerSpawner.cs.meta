@@ -4,9 +4,13 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - TempSpawnK: {fileID: 2127932246529017278, guid: bc9ec8ae685f40a45a29a7e62574b6c0, type: 3}
+  - TempSpawnK: {fileID: 2476220520824373327, guid: 3770cf4ae42cf4b498fa9f0f2e6346e6, type: 3}
   - TempSpawnMu: {fileID: 2127932246529017278, guid: 3c1395753a7d7284794a202003090015, type: 3}
   - TempSpawnMa: {fileID: 2127932246529017278, guid: d0270483927b4bb43ad090de5327fc6b, type: 3}
+  - KetchupSpawner: {instanceID: 0}
+  - MayoSpawner: {instanceID: 0}
+  - MustardSpawner: {instanceID: 0}
+  - BuyCS: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -49,9 +49,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fd1c11e4c04c8409adf8b03c699644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TempSpawnK: {fileID: 2127932246529017278, guid: bc9ec8ae685f40a45a29a7e62574b6c0, type: 3}
-  TempSpawnMu: {fileID: 2127932246529017278, guid: 3c1395753a7d7284794a202003090015, type: 3}
-  TempSpawnMa: {fileID: 2127932246529017278, guid: d0270483927b4bb43ad090de5327fc6b, type: 3}
+  TempSpawnK: {fileID: 2476220520824373327, guid: 3770cf4ae42cf4b498fa9f0f2e6346e6, type: 3}
+  TempSpawnMu: {fileID: 2476220520824373327, guid: ecf050f35ff755043ab1edddd9eeef52, type: 3}
+  TempSpawnMa: {fileID: 2476220520824373327, guid: 3e6e2a04f1569d945b3e0201573ef5d6, type: 3}
   LocationSpawn: {x: 1.1, y: -1.75, z: 0}
   KetchupSpawner: {fileID: 1260012686435069777}
   MayoSpawner: {fileID: 1606909956862683492}
