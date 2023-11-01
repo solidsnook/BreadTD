@@ -33,6 +33,8 @@ public class EnemyHealthSystemScript : MonoBehaviour
 
     private void Update()
     {
+        time = time + 1 * Time.deltaTime;
+
         if (damageType == "Ketchup")
             DoKetchupDamage();
         if (damageType == "Mustard")

@@ -27,7 +27,7 @@ public class UI_Menu_Manager : MonoBehaviour
     public void PlayGame()
     {
         //set this to the main game scene
-        SceneManager.LoadScene("Scenes/LevelLayoutTemplate");
+        SceneManager.LoadScene("Scenes/Level1");
     }
 
     public void BackToMenu(GameObject CurrentMenu)

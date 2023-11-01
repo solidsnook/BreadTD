@@ -30,7 +30,7 @@ public class BreadMover : MonoBehaviour
     void bHealthTDamage(int dmgAmount)
     {
        health -= dmgAmount;
-        if (health < 0)
+        if (health <= 0)
         {
             die();
         }

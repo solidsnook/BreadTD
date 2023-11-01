@@ -23,8 +23,8 @@ public class ButtonControl : MonoBehaviour
     {
 
         A1.onClick.AddListener(BuyScreenSpawn);
-        LocalPos = A1.GetComponentInChildren<GameObject>().transform.position;
-        spawnCS.LocationSpawn = LocalPos;
+        //LocalPos = A1.GetComponentInChildren<GameObject>().transform.position;
+        //spawnCS.LocationSpawn = LocalPos;
     }
 
     public void BuyScreenSpawn()
