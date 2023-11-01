@@ -12,10 +12,10 @@ public class GameManager : MonoBehaviour
     static List<bool> lvlLockList; //list of locked and unlocked waves
 
     //wave list for level
-    List<GameObject> lvlWaves;
+    public List<GameObject> lvlWaves;
 
     //bread list
-    private List<GameObject> AliveBreads;
+    public List<GameObject> AliveBreads;
 
     //lvl values
     int Lives;
@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 
     int breadCount;
 
+    bool WaveFinished = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +37,14 @@ public class GameManager : MonoBehaviour
         Lives = 3;
         lvlScore = 0;
         waveNum = 1;
+
+        StartWave(waveNum);
     }
 
     void FixedUpdate()
     {
         //check if wave finsihed
-        if (AliveBreads.Count == 0)
+        if (AliveBreads.Count == 0 && WaveFinished)
         {
             //wave Finished start new wave
             waveNum++;
@@ -65,19 +69,31 @@ public class GameManager : MonoBehaviour
     }
 
     void StartWave(int WaveNum)
-    {
+    { 
+        //lvl is finished when all waves are done
+        if (lvlWaves.Count < WaveNum)
+        {
+            Debug.Log("all Waves Finished");
+            return;
+        }
+
+        Debug.Log("Wave Started" + WaveNum);
+        WaveFinished = false;
+
         wave = lvlWaves[waveNum - 1];
-        //if wave is null then lvl is finished
-        if (wave == null) return;
+
+        //start wave 
+        wave.GetComponent<WaveScript>().StartSpawn();
 
         //delay before wave starts
         //wave.GetComponent<waveScript>().startDelay;
     }
 
-    void FinishWave()
+    public void FinishWave()
     {
         //make sure all enemies are dead before finishing
-        
+        Debug.Log("Wave" + waveNum + "finished");
+        WaveFinished = true;
     }
 
     bool IsLevelLocked(int level) 

@@ -7,8 +7,6 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-    
-    
     public GameObject GameManager;
 
     //breadMover bread;
@@ -24,7 +22,7 @@ public class Spawn : MonoBehaviour
 
     public int currentIndex = 0;
 
-    public void SpawnBread(GameObject bread)
+    public void SpawnBreadOfType(GameObject bread)
     {
         // Take out of here.
         GameObject EBread;
@@ -45,7 +43,7 @@ public class Spawn : MonoBehaviour
     {
         for (int i = 0; i < bSprites.Length; i++)
         {
-            SpawnBread(bSprites[i]);
+            SpawnBreadOfType(bSprites[i]);
             yield return new WaitForSeconds(spawnDelay);
         }
      
