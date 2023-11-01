@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 3297080927319085896}
   m_Layer: 0
   m_Name: Bread2
-  m_TagString: breadBasic
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   nextNode: 0
-  ehe: {fileID: 0}
   ns: {fileID: 0}
   moveSpeed: 2
 --- !u!114 &3297080927319085896
@@ -176,11 +175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  moveSpeed: 2
-  upDistance: 10
   damageTaken: 0
   poisonAmount: 0
   originalMaterial: {fileID: 0}
   overlayMaterial: {fileID: 2100000, guid: 07169b3de52c4b44bb2fd2ee79f162ff, type: 2}
   spriteRenderer: {fileID: 0}
   isPoisoned: 0
+  BM: {fileID: 0}
