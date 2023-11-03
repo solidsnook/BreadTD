@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class BreadMover : MonoBehaviour
 {
+    public GameManager GameManager;
+
     public float health;
 
     [SerializeField] private int nextNode = 0; // viewable in the prefabs to see what node it is attempting to reach.
@@ -23,6 +25,7 @@ public class BreadMover : MonoBehaviour
     }
     void die()
     {
+        GameManager.GetComponent<GameManager>().AliveBreads.Remove(this.GameObject());
         Destroy(this.gameObject);
     }
     public float moveSpeed;

@@ -1,6 +1,8 @@
 using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -49,6 +51,22 @@ public class GameManager : MonoBehaviour
             //wave Finished start new wave
             waveNum++;
             StartWave(waveNum);
+        }
+
+        bool delete = false;
+        GameObject breadDelete = null;
+        //delete breads from list if they are Destroyed
+        foreach (GameObject bread in AliveBreads)
+        {
+            if (bread.IsDestroyed())
+            {
+                delete = true;
+                breadDelete = bread;
+            }
+        }
+        if (delete) 
+        {
+            AliveBreads.Remove(breadDelete);
         }
     }
 

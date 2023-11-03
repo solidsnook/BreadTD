@@ -23,11 +23,11 @@ public class Spawn : MonoBehaviour
 
     public void SpawnBreadOfType(GameObject bread)
     {
-        // Take out of here.
         GameObject EBread;
         Debug.Log("I have spawned");
         EBread = Instantiate(bread, spawnPoint.position, Quaternion.identity);
         EBread.GetComponent<BreadMover>().ns = gameObject.GetComponent<NodesScript>();
+        GameManager.GetComponent<GameManager>().AliveBreads.Add(EBread); //adds bread to alive bread count
     }
 
     // Start is called before the first frame update
