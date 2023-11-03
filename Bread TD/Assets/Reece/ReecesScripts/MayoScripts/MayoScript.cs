@@ -20,6 +20,7 @@ public class MayoScript : MonoBehaviour
     public float sellValue;             // How much you can sell the tower for
     public int towerLevel;              // What tower level the tower is currently on
     public GameObject MayoShot;         // Prefab for the Mayo Shot
+    public Animator animator;           // This is the animator for the tower
 
     private GameObject enemy;
     private float time = 0f;
@@ -52,7 +53,7 @@ public class MayoScript : MonoBehaviour
         float y = this.transform.position.y;
 
         // Play Shooting Animation
-        //this.gameObject.GetComponent<AnimatorController>;
+        animator.SetTrigger("IsShooting?");
 
         // Spawn Mayo Shot
         GameObject currentShot = Instantiate(MayoShot, new Vector2(x, y + 1.7f), Quaternion.identity);
