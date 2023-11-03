@@ -20,6 +20,7 @@ public class MustardScript : MonoBehaviour
     public float sellValue;             // How much you can sell the tower for
     public int towerLevel;              // What tower level the tower is currently on
     public GameObject MustardShot;      // Prefab for the Mustard Shot
+    public Animator animator;           // This is the animator for the tower
 
     private GameObject enemy;
     private float time = 0f;
@@ -52,10 +53,10 @@ public class MustardScript : MonoBehaviour
         float y = this.transform.position.y;
 
         // Play Shooting Animation
-        //this.gameObject.GetComponent<AnimatorController>;
+        animator.SetTrigger("IsShooting?");
 
         // Spawn Mustard Shot
-        GameObject currentShot = Instantiate(MustardShot, new Vector2(x, y + 1.7f), Quaternion.identity);
+        GameObject currentShot = Instantiate(MustardShot, new Vector2(x, y + 1.4f), Quaternion.identity);
 
         // Adding new script to shot
         MustardShotScript shot = currentShot.AddComponent<MustardShotScript>();
