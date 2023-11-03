@@ -5,6 +5,8 @@ using System.Data;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
+using System.Data.SqlTypes;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,6 +29,12 @@ public class GameManager : MonoBehaviour
     int currentWave;
     int waveDelay;
 
+    //Money
+    int Crumbs;
+
+    //text variables
+    public TextMeshProUGUI livestxt ,Wavestxt, Crumbstxt, ScoreText;
+
     int breadCount;
 
     bool WaveFinished = false;
@@ -39,6 +47,7 @@ public class GameManager : MonoBehaviour
         Lives = 3;
         lvlScore = 0;
         waveNum = 1;
+        Crumbs = 0;
 
         StartWave(waveNum);
     }
@@ -105,6 +114,9 @@ public class GameManager : MonoBehaviour
 
         //delay before wave starts
         //wave.GetComponent<waveScript>().startDelay;
+
+        //setup text values
+        UpdateTextValues();
     }
 
     public void FinishWave()
@@ -114,12 +126,21 @@ public class GameManager : MonoBehaviour
         WaveFinished = true;
     }
 
+    //Not Implimented yet
     bool IsLevelLocked(int level) 
     {
         //check if specific level is locked
         bool lvllocked = lvlLockList[level];
         
         return lvllocked;
+    }
+
+    public void UpdateTextValues()
+    {
+        //setup text values
+        Wavestxt.text = "WAVES: " + waveNum + "/" + lvlWaves.Count;
+        livestxt.text = "LIVES: " + Lives;
+        Crumbstxt.text = "$ " + Crumbs;
     }
 
     private void OnApplicationPause(bool pause)
