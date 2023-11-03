@@ -92,6 +92,7 @@ MonoBehaviour:
   sellValue: 0
   towerLevel: 0
   MustardShot: {fileID: 5720070428662026715, guid: dd9a1b788c065804db7f037817d9be00, type: 3}
+  animator: {fileID: 5684883002238565096}
 --- !u!212 &39118247463099217
 SpriteRenderer:
   m_ObjectHideFlags: 0
