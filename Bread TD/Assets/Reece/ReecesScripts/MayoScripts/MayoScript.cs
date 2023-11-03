@@ -56,7 +56,7 @@ public class MayoScript : MonoBehaviour
         animator.SetTrigger("IsShooting?");
 
         // Spawn Mayo Shot
-        GameObject currentShot = Instantiate(MayoShot, new Vector2(x, y + 1.7f), Quaternion.identity);
+        GameObject currentShot = Instantiate(MayoShot, new Vector2(x, y + 1.4f), Quaternion.identity);
 
         // Adding new script to shot
         MayoShotScript shot = currentShot.AddComponent<MayoShotScript>();
