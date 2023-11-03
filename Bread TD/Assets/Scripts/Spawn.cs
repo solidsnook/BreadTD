@@ -15,7 +15,6 @@ public class Spawn : MonoBehaviour
     public Transform spawnPoint;
     private NodesScript ns;
 
-    
     public Transform target;
 
     public float spawnDelay = 5.0f;
