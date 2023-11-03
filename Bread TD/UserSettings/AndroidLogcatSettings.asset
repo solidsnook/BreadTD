@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R5CT70AT58W",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 2800,
+        "processId": 8286,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -48,6 +48,18 @@
             "deviceId": "R5CT70AT58W",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 2800,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 7330,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 8286,
             "exited": false
         }
     ],
