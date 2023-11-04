@@ -5885,6 +5885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1920735119}
+  - component: {fileID: 1920735120}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5907,6 +5908,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1920735120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920735118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1126c69fde38845a830471896be529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lvlWaves: []
+  AliveBreads: []
+  livestxt: {fileID: 0}
+  Wavestxt: {fileID: 0}
+  Crumbstxt: {fileID: 0}
+  ScoreText: {fileID: 0}
 --- !u!1 &1949568517
 GameObject:
   m_ObjectHideFlags: 0

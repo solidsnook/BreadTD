@@ -7,6 +7,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
 using System.Data.SqlTypes;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,16 +19,18 @@ public class GameManager : MonoBehaviour
     //wave list for level
     public List<GameObject> lvlWaves;
 
-    //bread list
+    //bread
     public List<GameObject> AliveBreads;
 
-    //lvl values
+    //lvl variables
     int Lives;
     int lvlScore;
     int waveNum;
     GameObject wave;
     int currentWave;
     int waveDelay;
+    bool WaveFinished = false;
+    int CurrentScene;
 
     //Money
     int Crumbs;
@@ -35,19 +38,23 @@ public class GameManager : MonoBehaviour
     //text variables
     public TextMeshProUGUI livestxt ,Wavestxt, Crumbstxt, ScoreText;
 
-    int breadCount;
-
-    bool WaveFinished = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        //setup lvl defaults
+        CurrentScene = SceneManager.GetActiveScene().buildIndex; 
 
+        //check if not menu scene
+        if(CurrentScene == 0)
+        {
+            return;
+        }
+
+        //setup lvl defaults
         Lives = 3;
         lvlScore = 0;
         waveNum = 1;
-        Crumbs = 0;
+        Crumbs = 0; 
 
         StartWave(waveNum);
     }
@@ -55,9 +62,9 @@ public class GameManager : MonoBehaviour
     void FixedUpdate()
     {
         //check if wave finsihed
-        if (AliveBreads.Count == 0 && WaveFinished)
+        if (AliveBreads.Count <= 0 && WaveFinished)
         {
-            //wave Finished start new wave
+            //start next wave
             waveNum++;
             StartWave(waveNum);
         }
@@ -89,10 +96,21 @@ public class GameManager : MonoBehaviour
 
     void finishLevel()
     {
+        //////TEMPORARY Check if menu scene: Remove when adding end lvl screen//////
+        if(CurrentScene == 0)
+        {
+            return;
+        }
+
         //need to add lvl score to total score
         Score += lvlScore;
 
-        //open level finsih Ui
+        //////TEMPORARY: next level loaded after final level done need to remove when adding the end lvl screen//////
+        int ActiveSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        ActiveSceneIndex++;
+        SceneManager.LoadScene(ActiveSceneIndex);
+
+        //open end of level screen
     }
 
     void StartWave(int WaveNum)
@@ -101,6 +119,8 @@ public class GameManager : MonoBehaviour
         if (lvlWaves.Count < WaveNum)
         {
             Debug.Log("all Waves Finished");
+            finishLevel();
+
             return;
         }
 
@@ -115,13 +135,12 @@ public class GameManager : MonoBehaviour
         //delay before wave starts
         //wave.GetComponent<waveScript>().startDelay;
 
-        //setup text values
+        //Update text values
         UpdateTextValues();
     }
 
     public void FinishWave()
     {
-        //make sure all enemies are dead before finishing
         Debug.Log("Wave" + waveNum + "finished");
         WaveFinished = true;
     }
