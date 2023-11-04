@@ -21,7 +21,7 @@ public class KetchupShotScript : MonoBehaviour
             Vector3 direction = target.transform.position - transform.position;
             direction.Normalize();
 
-           // Points Shot towards Bread
+            // Points Shot towards Bread
 
 
             // Move Shot to Bread
