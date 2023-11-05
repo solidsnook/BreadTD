@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /*Private Functions*/
     bool LoadLevel(int lvl)
     {
         //first check if level is locked and return false if it is
@@ -139,12 +140,6 @@ public class GameManager : MonoBehaviour
         UpdateTextValues();
     }
 
-    public void FinishWave()
-    {
-        Debug.Log("Wave" + waveNum + "finished");
-        WaveFinished = true;
-    }
-
     //Not Implimented yet
     bool IsLevelLocked(int level) 
     {
@@ -152,6 +147,36 @@ public class GameManager : MonoBehaviour
         bool lvllocked = lvlLockList[level];
         
         return lvllocked;
+    }
+
+    /*Public Functions*/
+    public void FinishWave()
+    {
+        Debug.Log("Wave" + waveNum + "finished");
+        WaveFinished = true;
+    }
+
+    //functions for crumbs(Money) system
+    public void AddCrumbs(int crumAmount)
+    {
+        Crumbs += crumAmount;
+
+        UpdateTextValues();
+    }
+
+    public bool RemoveCrumbs(int crumAmount)
+    {
+        //if crum cost is too high for balence return false to identify that the cost cannot be paid
+        if (Crumbs - crumAmount < 0)
+        {
+            return false;
+        }
+
+        Crumbs -= crumAmount;
+
+        UpdateTextValues();
+
+        return true;
     }
 
     public void UpdateTextValues()

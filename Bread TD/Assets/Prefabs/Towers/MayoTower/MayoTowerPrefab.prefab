@@ -87,7 +87,7 @@ MonoBehaviour:
   fireRate: 1
   attackRange: 20
   aoe: 4
-  cost: 10
+  cost: 40
   sellValue: 0
   towerLevel: 0
   MayoShot: {fileID: 5720070428662026715, guid: 158177d4ed962764dbfbb13dda2700fc, type: 3}

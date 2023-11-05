@@ -83,10 +83,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  speed: 3
+  speed: 5
   fireRate: 1
   attackRange: 20
-  cost: 0
+  cost: 10
   sellValue: 0
   towerLevel: 0
   KetchupShot: {fileID: 5720070428662026715, guid: 8a82d0c01b0651f4793d6c60d4ffa793, type: 3}

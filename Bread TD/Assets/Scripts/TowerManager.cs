@@ -6,9 +6,7 @@ public class TowerManager : MonoBehaviour
 {
     public GameObject BuyScreenOBJ;
 
-    public GameObject TempSpawnK;
-    public GameObject TempSpawnMu;
-    public GameObject TempSpawnMa;
+    GameManager gameManager;
 
     Vector2 CurrentButtonPos;
 
@@ -16,44 +14,15 @@ public class TowerManager : MonoBehaviour
 
     public void Start()
     {
-        Tower = true;
         BuyScreenOBJ.SetActive(false);
-
-        /*
-        KetchupSpawner.onClick.AddListener(TowerPlaceK());
-        MayoSpawner.onClick.AddListener(TowerPlaceMa);
-        MustardSpawner.onClick.AddListener(TowerPlaceMu); */ //WHYYYYY
-
     }
 
-    public void TowerPlaceK()
+    //function will be called by button and whatever tower is chosen and passed tp this function will be placed
+    public void TowerPlace(GameObject Tower)
     {
-        if (Tower == true)
-        {
-            Instantiate(TempSpawnK, CurrentButtonPos, Quaternion.identity);
-
-            CloseBuyScreen();
-        }
-    }
-
-    public void TowerPlaceMu()
-    {
-        if (Tower == true)
-        {
-            Instantiate(TempSpawnMu, CurrentButtonPos, Quaternion.identity);
-
-            CloseBuyScreen();
-        }
-    }
-
-    public void TowerPlaceMa()
-    {
-        if (Tower == true)
-        {
-            Instantiate(TempSpawnMa, CurrentButtonPos, Quaternion.identity);
-
-            CloseBuyScreen();
-        }
+        //if(gameManager.GetComponent<GameManager>().RemoveCrumbs())
+        Instantiate(Tower, CurrentButtonPos, Quaternion.identity);
+        CloseBuyScreen();
     }
 
     public void OpenBuyScreen(GameObject Button)
