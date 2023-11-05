@@ -54,7 +54,9 @@ public class GameManager : MonoBehaviour
         Lives = 3;
         lvlScore = 0;
         waveNum = 1;
-        Crumbs = 0; 
+        Crumbs = 1000;
+
+        UpdateTextValues();
 
         StartWave(waveNum);
     }
@@ -154,6 +156,11 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Wave" + waveNum + "finished");
         WaveFinished = true;
+    }
+
+    public void RemoveBread(GameObject bread)
+    {
+        AliveBreads.Remove(bread);
     }
 
     //functions for crumbs(Money) system

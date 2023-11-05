@@ -25,7 +25,7 @@ public class BreadMover : MonoBehaviour
     }
     void die()
     {
-        GameManager.GetComponent<GameManager>().AliveBreads.Remove(this.GameObject());
+        GameManager.GetComponent<GameManager>().RemoveBread(this.GameObject());
         Destroy(this.gameObject);
     }
     public float moveSpeed;

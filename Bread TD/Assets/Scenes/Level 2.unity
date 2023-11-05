@@ -4135,9 +4135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BuyScreenOBJ: {fileID: 5805434183041736926}
-  TempSpawnK: {fileID: 2476220520824373327, guid: 3770cf4ae42cf4b498fa9f0f2e6346e6, type: 3}
-  TempSpawnMu: {fileID: 2476220520824373327, guid: ecf050f35ff755043ab1edddd9eeef52, type: 3}
-  TempSpawnMa: {fileID: 2476220520824373327, guid: 3e6e2a04f1569d945b3e0201573ef5d6, type: 3}
+  gameManager: {fileID: 1496732622}
 --- !u!1 &1653256344
 GameObject:
   m_ObjectHideFlags: 0
@@ -5724,11 +5722,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1607372110}
         m_TargetAssemblyTypeName: TowerManager, Assembly-CSharp
-        m_MethodName: TowerPlaceMu
-        m_Mode: 1
+        m_MethodName: TowerPlace
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2476220520824373327, guid: ecf050f35ff755043ab1edddd9eeef52, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6275,11 +6273,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1607372110}
         m_TargetAssemblyTypeName: TowerManager, Assembly-CSharp
-        m_MethodName: TowerPlaceK
-        m_Mode: 1
+        m_MethodName: TowerPlace
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2476220520824373327, guid: 3770cf4ae42cf4b498fa9f0f2e6346e6, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6331,11 +6329,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1607372110}
         m_TargetAssemblyTypeName: TowerManager, Assembly-CSharp
-        m_MethodName: TowerPlaceMa
-        m_Mode: 1
+        m_MethodName: TowerPlace
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2476220520824373327, guid: 3e6e2a04f1569d945b3e0201573ef5d6, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
