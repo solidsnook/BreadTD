@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8728724104529113523}
   - component: {fileID: 6641628444268257592}
+  - component: {fileID: 4944462235110018157}
   m_Layer: 0
   m_Name: MayoShotPrefab
   m_TagString: Mayo
@@ -163,3 +164,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.3, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &4944462235110018157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5720070428662026715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eea024cba8871f40b10b09ef7bceb62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

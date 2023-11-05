@@ -8,18 +8,19 @@ using UnityEditor;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class KetchupScript : MonoBehaviour
+public class TowerScript : MonoBehaviour
 {
     // Declaring Variables
-    public float damage = 10f;          // How much damage the shot does
-    public float speed = 3f;            // How fast the shot can move
-    public float fireRate = 1f;         // How fast the tower can shoot
-    public float attackRange = 20f;     // How far can the enemy be for the tower to shoot
-    public float cost = 10f;            // How much the tower costs to place down
-    public float sellValue;             // How much you can sell the tower for
-    public int towerLevel;              // What tower level the tower is currently on
-    public GameObject KetchupShot;      // Prefab for the Ketchup Shot
-    
+    public float damage;            // How much damage the shot does
+    public float speed;             // How fast the shot can move
+    public float fireRate;          // How fast the tower can shoot
+    public float attackRange;       // How far can the enemy be for the tower to shoot
+    public float cost;              // How much the tower costs to place down
+    public float sellValue;         // How much you can sell the tower for
+    public int towerLevel;          // What tower level the tower is currently on
+    public GameObject Shot;         // Prefab for the Ketchup Shot
+    public float aoe;               // How big the area of damage is 
+    public int poisonAmount;        // How many times the damage is taken
     private GameObject enemy;
     private float time = 0f;
 
@@ -28,7 +29,7 @@ public class KetchupScript : MonoBehaviour
     {
         time = time + 1f * Time.deltaTime;
 
-        sellValue = cost / 2 * towerLevel; 
+        sellValue = cost / 2 * towerLevel;
 
         // Updates the attackRange variable to the radius of the collider so it can be easily changed
         GetComponent<CircleCollider2D>().radius = attackRange;
@@ -52,17 +53,19 @@ public class KetchupScript : MonoBehaviour
 
         // Play Shooting Animation
         //this.gameObject.GetComponent<AnimatorController>;
-       
+
         // Spawn Ketchup Shot
-        GameObject currentShot = Instantiate(KetchupShot, new Vector2(x, y + 1.7f), Quaternion.identity);
-        
+        GameObject currentShot = Instantiate(Shot, new Vector2(x, y + 1.7f), Quaternion.identity);
+
         // Adding new script to shot
-        KetchupShotScript shot = currentShot.AddComponent<KetchupShotScript>();
+        ShotScript shot = currentShot.GetComponent<ShotScript>();
 
         // Save speed to new shot script
         shot.shotSpeed = speed;
-        shot.ketchupDamage = damage;
+        shot.Damage = damage;
         shot.target = enemy;
+        shot.aoeRange = aoe;
+        shot.poisonAmount = poisonAmount;
     }
 
     void OnTriggerStay2D(Collider2D collision)
@@ -79,7 +82,7 @@ public class KetchupScript : MonoBehaviour
         // Reset the enemy reference when it exits the trigger.
         if (collision.CompareTag("Enemy"))
         {
-            enemy = null; 
+            enemy = null;
         }
     }
 }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1623411201869087070}
   - component: {fileID: 7856456068372877780}
-  - component: {fileID: 4911609941794476332}
+  - component: {fileID: 4796572286731935133}
   m_Layer: 0
   m_Name: MustardTowerPrefab
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 6317985322303790432}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &7856456068372877780
 CircleCollider2D:
@@ -70,7 +70,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 20
---- !u!114 &4911609941794476332
+--- !u!114 &4796572286731935133
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,18 +79,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2476220520824373327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1189783794ab7914da95383ab315a9a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 8457e9e66a425f9468ff2747eaf15c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  speed: 3
+  speed: 5
   fireRate: 1
-  attackRange: 20
-  poisonAmount: 5
-  cost: 10
+  attackRange: 30
+  cost: 0
   sellValue: 0
   towerLevel: 0
-  MustardShot: {fileID: 5720070428662026715, guid: dd9a1b788c065804db7f037817d9be00, type: 3}
+  Shot: {fileID: 5720070428662026715, guid: dd9a1b788c065804db7f037817d9be00, type: 3}
+  aoe: 0
+  poisonAmount: 20
 --- !u!1 &5010220424798673206
 GameObject:
   m_ObjectHideFlags: 0
