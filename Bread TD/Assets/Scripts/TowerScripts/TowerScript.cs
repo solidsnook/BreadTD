@@ -25,6 +25,12 @@ public class TowerScript : MonoBehaviour
     private float time = 0f;
     public Animator animator;
 
+    //Audio Variable Declaration
+    public AudioSource ShootSoundSource;
+    public AudioClip ShootSoundEffect;
+
+ 
+
     // Update is called once per frame
     void Update()
     {
@@ -54,6 +60,7 @@ public class TowerScript : MonoBehaviour
 
         // Play Shooting Animation
         animator.SetTrigger("IsShooting?");
+        ShootSoundSource.PlayOneShot(ShootSoundEffect);
 
         // Spawn Ketchup Shot
         GameObject currentShot = Instantiate(Shot, new Vector2(x, y + 1.2f), Quaternion.identity);
