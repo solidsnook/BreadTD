@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52ac3e13c6fdfd047abb72bba17f2c13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameManager: {fileID: 0}
   health: 0
   nextNode: 0
   ns: {fileID: 0}
@@ -98,6 +99,7 @@ MonoBehaviour:
   overlayMaterial: {fileID: 2100000, guid: 07169b3de52c4b44bb2fd2ee79f162ff, type: 2}
   spriteRenderer: {fileID: 9139316556147387581}
   isPoisoned: 0
+  deathPay: 10
   BM: {fileID: 0}
 --- !u!61 &-2813995813938662158
 BoxCollider2D:

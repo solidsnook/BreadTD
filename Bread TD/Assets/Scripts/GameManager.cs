@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         Lives = 3;
         lvlScore = 0;
         waveNum = 1;
-        Crumbs = 1000;
+        Crumbs = 20;
 
         UpdateTextValues();
 
@@ -69,22 +69,6 @@ public class GameManager : MonoBehaviour
             //start next wave
             waveNum++;
             StartWave(waveNum);
-        }
-
-        bool delete = false;
-        GameObject breadDelete = null;
-        //delete breads from list if they are Destroyed
-        foreach (GameObject bread in AliveBreads)
-        {
-            if (bread.IsDestroyed())
-            {
-                delete = true;
-                breadDelete = bread;
-            }
-        }
-        if (delete) 
-        {
-            AliveBreads.Remove(breadDelete);
         }
     }
 
