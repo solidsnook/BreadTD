@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KetchupShot_0: -8548274833158244965
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

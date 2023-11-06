@@ -11,6 +11,7 @@ public class ShotScript : MonoBehaviour
     public float Damage;        // How much damage the shot does
     public float aoeRange;      // How big the area of damage is 
     public int poisonAmount;    // How many times the damage is taken
+    public Rigidbody2D rb; 
 
     // Update is called once per frame
     void Update()
@@ -23,10 +24,14 @@ public class ShotScript : MonoBehaviour
             direction.Normalize();
 
             // Point towards bread
+            float angle = Mathf.Atan2(target.transform.position.y - transform.position.y, target.transform.position.x - 
+                transform.position.x) * Mathf.Rad2Deg - 90;
 
+            transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
 
             // Move Shot to Bread
-            transform.Translate(direction * shotSpeed * Time.deltaTime);
+            rb.velocity = direction * shotSpeed;
+            //transform.Translate(direction * shotSpeed * Time.deltaTime);
             //transform.LookAt(target.transform.position, Vector3.forward);
         }
         else

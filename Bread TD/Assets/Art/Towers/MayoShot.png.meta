@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MayoShot_0: -2748079053411897153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
