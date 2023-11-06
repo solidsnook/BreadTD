@@ -51,7 +51,6 @@ public class TowerScript : MonoBehaviour
             }
         }
     }
-
     void Shoot()
     {
         // Position of Tower

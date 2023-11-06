@@ -100,6 +100,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 9139316556147387581}
   isPoisoned: 0
   deathPay: 10
+  GameManager: {fileID: 0}
   BM: {fileID: 0}
 --- !u!61 &-2813995813938662158
 BoxCollider2D:
@@ -187,7 +188,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -21
   m_Sprite: {fileID: 6432317187266699195, guid: c988c82fa72b86a4a8de0c73543d7229, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
