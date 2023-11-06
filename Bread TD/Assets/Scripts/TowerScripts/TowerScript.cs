@@ -23,6 +23,7 @@ public class TowerScript : MonoBehaviour
     public int poisonAmount;        // How many times the damage is taken
     private GameObject enemy;
     private float time = 0f;
+    public Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -52,10 +53,10 @@ public class TowerScript : MonoBehaviour
         float y = this.transform.position.y;
 
         // Play Shooting Animation
-        //this.gameObject.GetComponent<AnimatorController>;
+        animator.SetTrigger("IsShooting?");
 
         // Spawn Ketchup Shot
-        GameObject currentShot = Instantiate(Shot, new Vector2(x, y + 1.7f), Quaternion.identity);
+        GameObject currentShot = Instantiate(Shot, new Vector2(x, y + 1.2f), Quaternion.identity);
 
         // Adding new script to shot
         ShotScript shot = currentShot.GetComponent<ShotScript>();
