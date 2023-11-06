@@ -220,7 +220,7 @@ MonoBehaviour:
   sellValue: 0
   towerLevel: 0
   Shot: {fileID: 5720070428662026715, guid: 158177d4ed962764dbfbb13dda2700fc, type: 3}
-  aoe: 30
+  aoe: 5
   poisonAmount: 0
   animator: {fileID: -745638009746855447}
   ShootSoundSource: {fileID: 6572823451398439098}

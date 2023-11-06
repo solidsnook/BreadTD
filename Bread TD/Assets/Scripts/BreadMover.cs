@@ -15,19 +15,6 @@ public class BreadMover : MonoBehaviour
 
     public NodesScript ns;
 
-    void bHealthTDamage(int dmgAmount) //die code that works with the script from Reece with the towers.
-    {
-        health -= dmgAmount;
-        if (health <= 0)
-        {
-            die();
-        }
-    }
-    void die()
-    {
-        GameManager.GetComponent<GameManager>().RemoveBread(this.GameObject());
-        Destroy(this.gameObject);
-    }
     public float moveSpeed;
     // Start is called before the first frame update
     void Start()

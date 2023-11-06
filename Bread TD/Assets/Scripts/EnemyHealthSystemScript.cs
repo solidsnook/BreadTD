@@ -15,6 +15,8 @@ public class EnemyHealthSystemScript : MonoBehaviour
     public Material overlayMaterial;
     public SpriteRenderer spriteRenderer;
     public bool isPoisoned = false;
+    public int deathPay;
+    [SerializeField] GameManager GameManager;
 
     private Vector3 startPosition;
     private string damageType;
@@ -29,6 +31,8 @@ public class EnemyHealthSystemScript : MonoBehaviour
     {
         BM = GetComponent<BreadMover>();
         startPosition = transform.position;
+
+        GameManager = FindAnyObjectByType<GameManager>();
     }
 
     private void Update()
@@ -44,7 +48,7 @@ public class EnemyHealthSystemScript : MonoBehaviour
         
         if (health <= 0)
         {
-            Destroy(this.gameObject);
+            die();
         }
 
         //float newY = startPosition.y + Mathf.Sin(Time.time * moveSpeed) * upDistance;
@@ -108,5 +112,12 @@ public class EnemyHealthSystemScript : MonoBehaviour
             health -= damageTaken;
             damageTaken = 0;
         }
+    }
+
+    void die()
+    {
+        GameManager.GetComponent<GameManager>().RemoveBread(this.GameObject());
+        GameManager.GetComponent<GameManager>().AddCrumbs(deathPay);
+        Destroy(this.gameObject);
     }
 }
