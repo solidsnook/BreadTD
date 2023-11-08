@@ -3,99 +3,45 @@
     "m_SelectedPackage": {
         "deviceId": "R5CT70AT58W",
         "name": "com.PinkTriangleReforged.breadTD",
-        "processId": 20488,
+        "processId": 22518,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 27938,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 31573,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 5001,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 6484,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 23484,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 24128,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 2800,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 7330,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 8286,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 8592,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 11122,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.PinkTriangleReforged.breadTD",
-            "processId": 6553,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.PinkTriangleReforged.breadTD",
-            "processId": 12622,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.PinkTriangleReforged.breadTD",
-            "processId": 13458,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
             "name": "com.PinkTriangleReforged.breadTD",
             "processId": 20488,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.sec.android.app.launcher",
+            "processId": 3936,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.PinkTriangleReforged.breadTD",
+            "processId": 25843,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.PinkTriangleReforged.breadTD",
+            "processId": 7754,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.PinkTriangleReforged.breadTD",
+            "processId": 8810,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.PinkTriangleReforged.breadTD",
+            "processId": 22518,
             "exited": false
         }
     ],

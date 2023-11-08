@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         Lives = 3;
         lvlScore = 0;
         waveNum = 1;
-        Crumbs = 20;
+        Crumbs = 100;
 
         UpdateTextValues();
 
