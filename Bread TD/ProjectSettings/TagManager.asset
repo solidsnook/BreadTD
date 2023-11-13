@@ -11,6 +11,8 @@ TagManager:
   - MayoAOE
   - breadBasic
   - breadSpeedy
+  - Egg
+  - breadICannotRemember
   layers:
   - Default
   - TransparentFX
