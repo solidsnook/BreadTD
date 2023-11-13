@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using NUnit.Framework.Interfaces;
 //using TreeEditor;
 using Unity.VisualScripting;
@@ -9,6 +10,7 @@ public class BreadMover : MonoBehaviour
 {
     public GameManager GameManager;
 
+
     public float health;
 
     [SerializeField] private int nextNode = 0; // viewable in the prefabs to see what node it is attempting to reach.
@@ -16,6 +18,11 @@ public class BreadMover : MonoBehaviour
     public NodesScript ns;
 
     public float moveSpeed;
+
+    //Josh Code ()
+    public PlayerHealthSystem PHS;
+    //Josh Code End
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +39,15 @@ public class BreadMover : MonoBehaviour
             float stepBread = moveSpeed * Time.deltaTime;
             if (nextNode == ns.moverNodes.Length) // So far it does nothing it if reaches the end of list, This can be worked on to add GameManager stuff to end the level or add game over mechanic.
             {
+                //Josh Code (triggers the 'DamageTaken' method to remove 1 health off the player)
+                PHS.DamageTaken();
+
+                Destroy(gameObject);
+
+                //Josh Code End
+
+
+
                 //end of list
             }
             else // this moves the bread to the node and increases the nextNode once it reaches it.
