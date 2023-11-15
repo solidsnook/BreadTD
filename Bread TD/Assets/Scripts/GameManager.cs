@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
         //check if not menu scene
         if(CurrentScene == 0)
-        {
+        { 
             return;
         }
 
