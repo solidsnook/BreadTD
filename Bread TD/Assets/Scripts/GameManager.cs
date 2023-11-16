@@ -175,7 +175,7 @@ public class GameManager : MonoBehaviour
         //setup text values
         Wavestxt.text = "WAVES: " + waveNum + "/" + lvlWaves.Count;
         livestxt.text = "LIVES: " + Lives;
-        Crumbstxt.text = "$ " + Crumbs;
+        Crumbstxt.text =  Crumbs + " Crumbs ";
     }
 
     private void OnApplicationPause(bool pause)
