@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4166516247732983808}
   - component: {fileID: 3482058993976317522}
   - component: {fileID: 1905570640350200175}
+  - component: {fileID: 1051929103033810427}
   m_Layer: 0
   m_Name: EggBombPrefab
   m_TagString: Egg
@@ -46,12 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda721aa72a214b48a10c60e33b2b8ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 21
   aoe: 10
   cost: 0
-  fuseTime: 5
-  lit: {fileID: 2834162385470851200, guid: 90bb0b6fc4d594f469df5096f8a9493e, type: 3}
-  Blow: {fileID: -4250554832766489446, guid: 6e8be82e1d421584ab151caba18f22c3, type: 3}
+  fuseTime: 2
+  animator: {fileID: 1051929103033810427}
 --- !u!212 &3482058993976317522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5652872383473314887, guid: e41383f7ac3116d43993980800e535d3, type: 3}
+  m_Sprite: {fileID: 2834162385470851200, guid: 90bb0b6fc4d594f469df5096f8a9493e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -140,3 +140,25 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 10
+--- !u!95 &1051929103033810427
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6981735284934616146}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: acaa69332cf6f0643ad2b2d849677a3c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

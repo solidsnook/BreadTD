@@ -11,14 +11,17 @@ public class EggBombScript : MonoBehaviour
     public float aoe;             // How big the explosion is
     public float cost;            // How much the tower costs to place down
     public float fuseTime;        // How long until the bomb explodes
+    public Animator animator;     // This is the animator for the egg bomb
 
-    public Sprite lit;            // Temp
-    public Sprite blow;           // Temp
+    //public Sprite lit;            // Temp
+    //public Sprite blow;           // Temp
 
     private GameObject enemy;
 
     void Start()
     {
+        // Plays Egg Bomb Lit animation
+        //this.GetComponent<SpriteRenderer>().sprite = lit;
     }
 
     // Update is called once per frame
@@ -37,7 +40,7 @@ public class EggBombScript : MonoBehaviour
         if (fuseTime <= 0)
         {
             // Plays Egg Bomb Explosion animation o7
-            this.GetComponent<SpriteRenderer>().sprite = blow;
+            animator.SetTrigger("IsExploding?");
 
             Debug.Log("BLOW");
 
@@ -48,16 +51,12 @@ public class EggBombScript : MonoBehaviour
                 breadScript.damageTaken = damage;
             }
 
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
         else
         {
             // Starts count down until it blows up
             fuseTime -= Time.deltaTime;
-
-            // Plays Egg Bomb Lit animation
-            this.GetComponent<SpriteRenderer>().sprite = lit;
-
         }
     }
 
@@ -79,4 +78,9 @@ public class EggBombScript : MonoBehaviour
         }
     }
 
+    void DestroyObject()
+    {
+        Destroy(this.gameObject);
     }
+
+}

@@ -254,26 +254,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1905570640350200175, guid: 65f23db1355e72f4b8e7db9555869c44, type: 3}
-      propertyPath: m_Radius
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905570640350200175, guid: 65f23db1355e72f4b8e7db9555869c44, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4166516247732983808, guid: 65f23db1355e72f4b8e7db9555869c44, type: 3}
-      propertyPath: aoe
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4166516247732983808, guid: 65f23db1355e72f4b8e7db9555869c44, type: 3}
-      propertyPath: damage
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4166516247732983808, guid: 65f23db1355e72f4b8e7db9555869c44, type: 3}
-      propertyPath: fuseTime
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6981735284934616146, guid: 65f23db1355e72f4b8e7db9555869c44, type: 3}
       propertyPath: m_Name
       value: EggBombPrefab
