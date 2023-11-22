@@ -45,7 +45,9 @@ public class EnemyHealthSystemScript : MonoBehaviour
             DoMustardDamage();
         if (damageType == "Mayo")
             DoMayoDamage();
-        
+        if (damageType == "Egg")
+            DoEggDamage();
+
         if (health <= 0)
         {
             die();
@@ -65,6 +67,9 @@ public class EnemyHealthSystemScript : MonoBehaviour
 
         if (collision.CompareTag("MayoAOE"))
             damageType = "Mayo";
+
+        if (collision.CompareTag("Egg"))
+            damageType = "Egg";
     }
 
     void DoKetchupDamage()
@@ -109,6 +114,15 @@ public class EnemyHealthSystemScript : MonoBehaviour
         if (damageTaken > 0)
         {
             //Debug.Log("Taken Mayo Damage");
+            health -= damageTaken;
+            damageTaken = 0;
+        }
+    }
+
+    void DoEggDamage()
+    {
+        if (damageTaken > 0)
+        {
             health -= damageTaken;
             damageTaken = 0;
         }
