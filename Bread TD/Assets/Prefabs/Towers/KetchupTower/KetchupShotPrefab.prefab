@@ -100,6 +100,7 @@ MonoBehaviour:
   aoeRange: 0
   poisonAmount: 0
   rb: {fileID: 2415377922719922504}
+  animator: {fileID: 2113032997970107191}
 --- !u!212 &9103259576137184590
 SpriteRenderer:
   m_ObjectHideFlags: 0
