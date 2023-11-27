@@ -7,16 +7,14 @@ using static UnityEngine.GraphicsBuffer;
 public class EnemyHealthSystemScript : MonoBehaviour
 {
     public float health = 20f;
-    //public float moveSpeed = 2.0f; // Adjust the speed of the movement.
-    //public float upDistance = 10.0f; // Adjust the distance the object moves up and down.
+    public float moveSpeed = 2.0f; // Adjust the speed of the movement.
+    public float upDistance = 10.0f; // Adjust the distance the object moves up and down.
     public float damageTaken;
     public int poisonAmount;
     public Material originalMaterial;
     public Material overlayMaterial;
     public SpriteRenderer spriteRenderer;
     public bool isPoisoned = false;
-    public int deathPay;
-    [SerializeField] GameManager GameManager;
 
     private Vector3 startPosition;
     private string damageType;
@@ -25,19 +23,14 @@ public class EnemyHealthSystemScript : MonoBehaviour
     private int poisonCounter;
     private float time = 0f;
 
-    [SerializeField] private BreadMover BM;
-
     private void Start()
     {
-        BM = GetComponent<BreadMover>();
         startPosition = transform.position;
-
-        GameManager = FindAnyObjectByType<GameManager>();
     }
 
     private void Update()
     {
-        time = time + 1 * Time.deltaTime;
+        time = time + 1f * Time.deltaTime;
 
         if (damageType == "Ketchup")
             DoKetchupDamage();
@@ -45,10 +38,12 @@ public class EnemyHealthSystemScript : MonoBehaviour
             DoMustardDamage();
         if (damageType == "Mayo")
             DoMayoDamage();
-        
+        if (damageType == "Egg")
+            DoEggDamage();
+
         if (health <= 0)
         {
-            die();
+            Destroy(this.gameObject);
         }
 
         //float newY = startPosition.y + Mathf.Sin(Time.time * moveSpeed) * upDistance;
@@ -65,6 +60,9 @@ public class EnemyHealthSystemScript : MonoBehaviour
 
         if (collision.CompareTag("MayoAOE"))
             damageType = "Mayo";
+
+        if (collision.CompareTag("Egg"))
+            damageType = "Egg";
     }
 
     void DoKetchupDamage()
@@ -114,10 +112,12 @@ public class EnemyHealthSystemScript : MonoBehaviour
         }
     }
 
-    void die()
+    void DoEggDamage()
     {
-        GameManager.GetComponent<GameManager>().RemoveBread(this.GameObject());
-        GameManager.GetComponent<GameManager>().AddCrumbs(deathPay);
-        Destroy(this.gameObject);
+        if (damageTaken > 0)
+        {
+            health -= damageTaken;
+            damageTaken = 0;
+        }
     }
 }

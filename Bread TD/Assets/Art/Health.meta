@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Bread TD/Assets/Art/Health.meta
 guid: eaceb1c9433c1614699a0cce0268f566
+========
+guid: 891ebe3e521e50f4390aad58e5af0826
+>>>>>>>> towers:Bread TD/Assets/Art/Towers/Animations.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

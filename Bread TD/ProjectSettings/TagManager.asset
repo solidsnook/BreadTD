@@ -9,7 +9,14 @@ TagManager:
   - Ketchup
   - Mayo
   - MayoAOE
+<<<<<<< HEAD
   - Wave
+=======
+  - breadBasic
+  - breadSpeedy
+  - Egg
+  - breadICannotRemember
+>>>>>>> towers
   layers:
   - Default
   - TransparentFX
