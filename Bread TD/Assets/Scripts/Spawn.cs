@@ -24,15 +24,20 @@ public class Spawn : MonoBehaviour
     //Josh Code (Rference used for player health system - when bread reaches last node it triggers a function to take damage)
     private PlayerHealthSystem PHS;
     public GameObject HealthSystem;
+    private GameManager GameMan;
+    public GameObject GM;
+
     //Josh Code End
     public void SpawnBreadOfType(GameObject bread)
     {
+        //Ishaq's Code
         GameObject EBread;
         Debug.Log("I have spawned");
         EBread = Instantiate(bread, spawnPoint.position, Quaternion.identity);
         EBread.GetComponent<BreadMover>().ns = gameObject.GetComponent<NodesScript>();
         //Josh Code
         EBread.GetComponent<BreadMover>().PHS = HealthSystem.GetComponent<PlayerHealthSystem>();
+        EBread.GetComponent<BreadMover>().GameManager = gameObject.GetComponent<GameManager>();
         //Josh Code End
         GameManager.GetComponent<GameManager>().AliveBreads.Add(EBread); //adds bread to alive bread count
     }
