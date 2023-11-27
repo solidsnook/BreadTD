@@ -22,12 +22,13 @@ public class BreadMover : MonoBehaviour
 
     //Josh Code ()
     public PlayerHealthSystem PHS;
+    public EnemyHealthSystemScript EHS;
     //Josh Code End
 
     // Start is called before the first frame update
     void Start()
     {
-
+        GameManager = FindAnyObjectByType<GameManager>();
     }
 
     // Update is called once per frame
@@ -42,11 +43,10 @@ public class BreadMover : MonoBehaviour
             {
                 //Josh Code (triggers the 'DamageTaken' method to remove 1 health off the player)
                 PHS.DamageTaken();
-
+                GameManager.GetComponent<GameManager>().RemoveBread(this.GameObject());
                 Destroy(this.gameObject);
+
                 //Josh Code End
-
-
 
                 //end of list
             }

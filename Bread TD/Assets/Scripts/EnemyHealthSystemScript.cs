@@ -134,4 +134,10 @@ public class EnemyHealthSystemScript : MonoBehaviour
         GameManager.GetComponent<GameManager>().AddCrumbs(deathPay);
         Destroy(this.gameObject);
     }
+
+    public void EndDie()
+    {
+        GameManager.GetComponent<GameManager>().RemoveBread(this.GameObject());
+
+    }
 }
