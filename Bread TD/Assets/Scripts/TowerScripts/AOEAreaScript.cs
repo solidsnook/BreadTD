@@ -25,7 +25,7 @@ public class AOEAreaScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("breadBasic") || collision.CompareTag("breadSpeedy") || collision.CompareTag("breadICannotRemember"))
+        if (collision.CompareTag("Enemy"))
         {
             // Increment the collision count.
             collisionCount++;
