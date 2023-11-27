@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class ButtonPlacerScript : MonoBehaviour
 {
     //button stats
     private bool Ocupied;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,4 +26,11 @@ public class ButtonPlacerScript : MonoBehaviour
     {
         Ocupied = Set;
     }
+
+
+    public bool GetOcupied()
+    {
+        return Ocupied;
+    }
 }
+ 

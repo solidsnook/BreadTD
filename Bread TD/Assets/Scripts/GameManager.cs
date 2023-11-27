@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
         //check if not menu scene
         if(CurrentScene == 0)
-        {
+        { 
             return;
         }
 
@@ -175,7 +175,7 @@ public class GameManager : MonoBehaviour
         //setup text values
         Wavestxt.text = "WAVES: " + waveNum + "/" + lvlWaves.Count;
         livestxt.text = "LIVES: " + Lives;
-        Crumbstxt.text = "$ " + Crumbs;
+        Crumbstxt.text =  Crumbs + " Crumbs ";
     }
 
     private void OnApplicationPause(bool pause)
