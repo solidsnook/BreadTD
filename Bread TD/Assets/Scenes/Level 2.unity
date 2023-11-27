@@ -5300,8 +5300,8 @@ MonoBehaviour:
   BuyScreenOBJ: {fileID: 5805434183041736926}
   gameManager: {fileID: 1496732622}
   SelectedButton: {fileID: 0}
-  NotOccupied: {fileID: 0}
-  Occupied: {fileID: 0}
+  NotOccupied: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  Occupied: {fileID: -1752430859451195970, guid: 2fda5705d80f8524d9469b7b02553d51, type: 3}
 --- !u!1 &1618512975
 GameObject:
   m_ObjectHideFlags: 0
