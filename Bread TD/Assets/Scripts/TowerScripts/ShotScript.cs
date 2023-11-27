@@ -11,7 +11,8 @@ public class ShotScript : MonoBehaviour
     public float Damage;        // How much damage the shot does
     public float aoeRange;      // How big the area of damage is 
     public int poisonAmount;    // How many times the damage is taken
-    public Rigidbody2D rb; 
+    public Rigidbody2D rb;
+    public Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -36,7 +37,10 @@ public class ShotScript : MonoBehaviour
         }
         else
         {
-            Destroy(this.gameObject);
+            rb.velocity = Vector3.zero;
+
+            // Plays Splat Animation
+            animator.SetTrigger("IsSplatting?");
         }
     }
 
@@ -44,6 +48,9 @@ public class ShotScript : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
+            // Plays Splat Animation
+            animator.SetTrigger("IsSplatting?");
+
             EnemyHealthSystemScript breadScript = target.GetComponent<EnemyHealthSystemScript>();
             breadScript.damageTaken = Damage;
 
@@ -67,8 +74,16 @@ public class ShotScript : MonoBehaviour
                     aoe.aoe = aoeRange;
                 }
             }
-
-            Destroy(this.gameObject);
         }
+    }
+
+    void DestroyObject()
+    {
+        Destroy(this.gameObject);
+    }
+
+    void ScaleUp()
+    {
+        this.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
     }
 }

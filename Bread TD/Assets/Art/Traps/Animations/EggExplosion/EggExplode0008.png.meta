@@ -1,0 +1,724 @@
+fileFormatVersion: 2
+guid: 25365e81a3dcaa443b821b08439adb58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1707706718203292694
+    second: EggExplode0008_0
+  - first:
+      213: 1895661120268113873
+    second: EggExplode0008_1
+  - first:
+      213: -7312904599433094649
+    second: EggExplode0008_2
+  - first:
+      213: 7113031662940288807
+    second: EggExplode0008_3
+  - first:
+      213: 2229416887215925017
+    second: EggExplode0008_4
+  - first:
+      213: 1728513354860713160
+    second: EggExplode0008_5
+  - first:
+      213: -4634721401109657338
+    second: EggExplode0008_6
+  - first:
+      213: 7580425113085993680
+    second: EggExplode0008_7
+  - first:
+      213: -2078762162673867785
+    second: EggExplode0008_8
+  - first:
+      213: 4692655065588425936
+    second: EggExplode0008_9
+  - first:
+      213: -4856267873866191183
+    second: EggExplode0008_10
+  - first:
+      213: -2178200206927785236
+    second: EggExplode0008_11
+  - first:
+      213: -5412691446285284953
+    second: EggExplode0008_12
+  - first:
+      213: -6758970616479120911
+    second: EggExplode0008_13
+  - first:
+      213: 63275901385949508
+    second: EggExplode0008_14
+  - first:
+      213: -3504456614726560108
+    second: EggExplode0008_15
+  - first:
+      213: -8469255615998907774
+    second: EggExplode0008_16
+  - first:
+      213: -6941482832334008323
+    second: EggExplode0008_17
+  - first:
+      213: 1350122320274534198
+    second: EggExplode0008_18
+  - first:
+      213: -1792629570746248161
+    second: EggExplode0008_19
+  - first:
+      213: 5783736185773815942
+    second: EggExplode0008_20
+  - first:
+      213: -4846158859745065383
+    second: EggExplode0008_21
+  - first:
+      213: -5671783484876962931
+    second: EggExplode0008_22
+  - first:
+      213: 5039478232430734057
+    second: EggExplode0008_23
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EggExplode0008_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 329
+        width: 95
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3d1f0a9c10d48e0800000000000000
+      internalID: -1707706718203292694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 421
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d79918cebdbe4a10800000000000000
+      internalID: 1895661120268113873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_2
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 365
+        width: 87
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a58722308538a90800000000000000
+      internalID: -7312904599433094649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_3
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 359
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72779a96c9096b260800000000000000
+      internalID: 7113031662940288807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_4
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 338
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91723c2d8da70fe10800000000000000
+      internalID: 2229416887215925017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_5
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 132
+        width: 197
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4ddf9fcb9ecf710800000000000000
+      internalID: 1728513354860713160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_6
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 330
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60945f501792eafb0800000000000000
+      internalID: -4634721401109657338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_7
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 327
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2e0ff3a74133960800000000000000
+      internalID: 7580425113085993680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_8
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 332
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f32d49a3d0c623e0800000000000000
+      internalID: -2078762162673867785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_9
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 326
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4e5dd5be8af1140800000000000000
+      internalID: 4692655065588425936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_10
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 331
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be601c29121b9cb0800000000000000
+      internalID: -4856267873866191183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 327
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce21360d37a75c1e0800000000000000
+      internalID: -2178200206927785236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_12
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 313
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9ce59aec142e4b0800000000000000
+      internalID: -5412691446285284953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_13
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 319
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1857de8005332a0800000000000000
+      internalID: -6758970616479120911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_14
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 257
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441c3f8d81dc0e000800000000000000
+      internalID: 63275901385949508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_15
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 276
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496947cb64bad5fc0800000000000000
+      internalID: -3504456614726560108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_16
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 283
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a2768a3e8277a80800000000000000
+      internalID: -8469255615998907774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 57
+        width: 80
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff424c3426eaaf90800000000000000
+      internalID: -6941482832334008323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_18
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 146
+        width: 53
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f2a47d8199cb210800000000000000
+      internalID: 1350122320274534198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_19
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 107
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f141fc537ec4f17e0800000000000000
+      internalID: -1792629570746248161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_20
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 34
+        width: 183
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688fe9bda65f34050800000000000000
+      internalID: 5783736185773815942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_21
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 47
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95688cf613cfebcb0800000000000000
+      internalID: -4846158859745065383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_22
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 158
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d834bfc88f6c941b0800000000000000
+      internalID: -5671783484876962931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggExplode0008_23
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 88
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eae85980c2dfe540800000000000000
+      internalID: 5039478232430734057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      EggExplode0008_0: -1707706718203292694
+      EggExplode0008_1: 1895661120268113873
+      EggExplode0008_10: -4856267873866191183
+      EggExplode0008_11: -2178200206927785236
+      EggExplode0008_12: -5412691446285284953
+      EggExplode0008_13: -6758970616479120911
+      EggExplode0008_14: 63275901385949508
+      EggExplode0008_15: -3504456614726560108
+      EggExplode0008_16: -8469255615998907774
+      EggExplode0008_17: -6941482832334008323
+      EggExplode0008_18: 1350122320274534198
+      EggExplode0008_19: -1792629570746248161
+      EggExplode0008_2: -7312904599433094649
+      EggExplode0008_20: 5783736185773815942
+      EggExplode0008_21: -4846158859745065383
+      EggExplode0008_22: -5671783484876962931
+      EggExplode0008_23: 5039478232430734057
+      EggExplode0008_3: 7113031662940288807
+      EggExplode0008_4: 2229416887215925017
+      EggExplode0008_5: 1728513354860713160
+      EggExplode0008_6: -4634721401109657338
+      EggExplode0008_7: 7580425113085993680
+      EggExplode0008_8: -2078762162673867785
+      EggExplode0008_9: 4692655065588425936
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
