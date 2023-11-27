@@ -10,6 +10,7 @@ TagManager:
   - Mayo
   - MayoAOE
   - Wave
+  - Egg
   layers:
   - Default
   - TransparentFX

@@ -41,6 +41,8 @@ public class TowerManager : MonoBehaviour
             //josh code
             if (SelectedButton.GetComponent<ButtonPlacerScript>().GetOcupied() == true) {
             SelectedButton.GetComponent<Image>().sprite = Occupied;
+                Debug.Log("button sprite change");
+
             }
             //end josh code
             CloseBuyScreen();

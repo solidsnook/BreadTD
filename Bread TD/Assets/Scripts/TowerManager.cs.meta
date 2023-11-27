@@ -3,7 +3,12 @@ guid: 96b90a19ed3b147488940d580e04a7c5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - BuyScreenOBJ: {instanceID: 0}
+  - gameManager: {instanceID: 0}
+  - SelectedButton: {instanceID: 0}
+  - NotOccupied: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  - Occupied: {fileID: -1752430859451195970, guid: 2fda5705d80f8524d9469b7b02553d51, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
