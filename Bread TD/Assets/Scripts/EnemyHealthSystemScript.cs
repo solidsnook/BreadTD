@@ -114,7 +114,7 @@ public class EnemyHealthSystemScript : MonoBehaviour
         }
     }
 
-    void die()
+    public void die()
     {
         GameManager.GetComponent<GameManager>().RemoveBread(this.GameObject());
         GameManager.GetComponent<GameManager>().AddCrumbs(deathPay);
