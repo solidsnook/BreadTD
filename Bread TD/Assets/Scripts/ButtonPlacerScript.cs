@@ -28,7 +28,7 @@ public class ButtonPlacerScript : MonoBehaviour
     }
 
 
-    public void GetOcupied()
+    public bool GetOcupied()
     {
         return Ocupied;
     }
