@@ -551,7 +551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -936,7 +936,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1281,7 +1281,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -205270267638800340, guid: 70378625cd93e484198de847fa1e2b53, type: 3}
+  m_Sprite: {fileID: -205270267638800340, guid: 4d9a71fe180e008418d079af72e00db0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2015,7 +2015,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2173,7 +2173,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2923,7 +2923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3146,7 +3146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -205270267638800340, guid: 70378625cd93e484198de847fa1e2b53, type: 3}
+  m_Sprite: {fileID: -205270267638800340, guid: 4d9a71fe180e008418d079af72e00db0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3782,7 +3782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3870,7 +3870,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -205270267638800340, guid: 70378625cd93e484198de847fa1e2b53, type: 3}
+  m_Sprite: {fileID: -205270267638800340, guid: 4d9a71fe180e008418d079af72e00db0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3966,6 +3966,7 @@ MonoBehaviour:
   spawnDelay: 1
   currentIndex: 0
   HealthSystem: {fileID: 1968378719}
+  GM: {fileID: 0}
 --- !u!114 &1246125496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4134,7 +4135,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4361,7 +4362,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4657,7 +4658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4993,7 +4994,8 @@ MonoBehaviour:
   - {fileID: 20195972}
   - {fileID: 411420720}
   AliveBreads: []
-  livestxt: {fileID: 1079688507}
+  Lives: 0
+  HealthSystem: {fileID: 1968378719}
   Wavestxt: {fileID: 1101385900}
   Crumbstxt: {fileID: 2080314036}
   ScoreText: {fileID: 2001790949}
@@ -5300,8 +5302,8 @@ MonoBehaviour:
   BuyScreenOBJ: {fileID: 5805434183041736926}
   gameManager: {fileID: 1496732622}
   SelectedButton: {fileID: 0}
-  NotOccupied: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
-  Occupied: {fileID: -1752430859451195970, guid: 2fda5705d80f8524d9469b7b02553d51, type: 3}
+  NotOccupied: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
+  Occupied: {fileID: -1752430859451195970, guid: 01d09bc51eb083249973cd78d48e8457, type: 3}
 --- !u!1 &1618512975
 GameObject:
   m_ObjectHideFlags: 0
@@ -5724,7 +5726,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5882,7 +5884,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -618647104434945567, guid: 1b7f2828df2cbea4ab409bbc1421f169, type: 3}
+  m_Sprite: {fileID: -618647104434945567, guid: 90eb6d9338117af4d97cb0d09706bfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6593,12 +6595,13 @@ MonoBehaviour:
   Health: 3
   LoseScreen: {fileID: 778582258}
   LevelFinishScreen: {fileID: 1999338882}
-  Life1: {fileID: 299992386}
-  Life2: {fileID: 1149309891}
-  Life3: {fileID: 943865355}
-  FirstBread: {fileID: 0}
-  FullHeart: {fileID: -205270267638800340, guid: 70378625cd93e484198de847fa1e2b53, type: 3}
-  NoHeart: {fileID: -3360795912230786166, guid: 8e8a27519325b5045ba608a9265332d3, type: 3}
+  Hearts:
+  - {fileID: 943865355}
+  - {fileID: 1149309891}
+  - {fileID: 299992386}
+  FullHeart: {fileID: -205270267638800340, guid: 4d9a71fe180e008418d079af72e00db0, type: 3}
+  NoHeart: {fileID: -3360795912230786166, guid: f1547ee86e79d4e4580254ab043309db, type: 3}
+  manger: {fileID: 0}
 --- !u!1 &1999338882
 GameObject:
   m_ObjectHideFlags: 0

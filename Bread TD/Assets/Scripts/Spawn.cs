@@ -36,7 +36,6 @@ public class Spawn : MonoBehaviour
         EBread = Instantiate(bread, spawnPoint.position, Quaternion.identity);
         EBread.GetComponent<BreadMover>().ns = gameObject.GetComponent<NodesScript>();
         //Josh Code
-        EBread.GetComponent<BreadMover>().PHS = HealthSystem.GetComponent<PlayerHealthSystem>();
         EBread.GetComponent<BreadMover>().GameManager = gameObject.GetComponent<GameManager>();
         //Josh Code End
         GameManager.GetComponent<GameManager>().AliveBreads.Add(EBread); //adds bread to alive bread count

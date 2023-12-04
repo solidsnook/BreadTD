@@ -14,15 +14,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: d5788ae19036ef3498f91b9aa37deff3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level1.unity
     guid: 34e2db1aa0b0a7846b2abd632b38d173
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level 2.unity
     guid: 1f7d50c74b67fcd45a1ab72e29cf158c
   - enabled: 0
     path: Assets/Scenes/BuildScene/BScene.unity
     guid: e012818591f73034c90657f807064b35
+  - enabled: 1
+    path: Assets/Scenes/Josh'sNewLevels1/Level 1.unity
+    guid: d9b30ea0289c46a44be3edd61a95dd53
+  - enabled: 1
+    path: Assets/Scenes/Josh'sNewLevels1/Level 2.unity
+    guid: d526f1f3d13ad704a9b1421cbdf1d13d
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 4f6ca8acb348d3e4d883c614b0f26c1c, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 2ce592d5b96dcb246b1ac175e2de8d0b, type: 2}

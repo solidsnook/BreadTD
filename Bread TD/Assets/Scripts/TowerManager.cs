@@ -10,7 +10,8 @@ public class TowerManager : MonoBehaviour
 
     public GameObject gameManager;
 
-    public GameObject SelectedButton;
+    [SerializeField]
+    GameObject SelectedButton;
 
     Vector2 CurrentButtonPos;
     //josh code

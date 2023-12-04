@@ -51,7 +51,9 @@ public class ShotScript : MonoBehaviour
             // Plays Splat Animation
             animator.SetTrigger("IsSplatting?");
 
+            if (target == null) return;
             EnemyHealthSystemScript breadScript = target.GetComponent<EnemyHealthSystemScript>();
+
             breadScript.damageTaken = Damage;
 
             if (breadScript.isPoisoned == false)

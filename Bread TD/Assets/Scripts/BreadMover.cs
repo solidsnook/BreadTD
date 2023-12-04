@@ -20,11 +20,6 @@ public class BreadMover : MonoBehaviour
 
     public float moveSpeed;
 
-    //Josh Code ()
-    public PlayerHealthSystem PHS;
-    public EnemyHealthSystemScript EHS;
-    //Josh Code End
-
     // Start is called before the first frame update
     void Start()
     {
@@ -41,12 +36,10 @@ public class BreadMover : MonoBehaviour
             float stepBread = moveSpeed * Time.deltaTime;
             if (nextNode == ns.moverNodes.Length) // So far it does nothing it if reaches the end of list, This can be worked on to add GameManager stuff to end the level or add game over mechanic.
             {
-                //Josh Code (triggers the 'DamageTaken' method to remove 1 health off the player)
-                PHS.DamageTaken();
+                //GameManager - (triggers the 'DamageTaken' method to remove 1 health off the player)
+                GameManager.LoseLife();
                 GameManager.GetComponent<GameManager>().RemoveBread(this.GameObject());
                 Destroy(this.gameObject);
-
-                //Josh Code End
 
                 //end of list
             }

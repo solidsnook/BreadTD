@@ -6,6 +6,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using System.Data.SqlTypes;
 using UnityEngine.SceneManagement;
 
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
     public List<GameObject> AliveBreads;
 
     //lvl variables
-    int Lives;
+    public int Lives;
     int lvlScore;
     int waveNum;
     GameObject wave;
@@ -32,12 +33,18 @@ public class GameManager : MonoBehaviour
     bool WaveFinished = false;
     int CurrentScene;
 
+    //health
+    public GameObject HealthSystem;
+
     //Money
     int Crumbs;
 
     //text variables
-    public TextMeshProUGUI livestxt ,Wavestxt, Crumbstxt, ScoreText;
+    public TextMeshProUGUI Wavestxt, Crumbstxt, ScoreText;
 
+    //temp
+    public GameObject LoseScreen;
+    public GameObject LevelFinishScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +66,10 @@ public class GameManager : MonoBehaviour
         UpdateTextValues();
 
         StartWave(waveNum);
+
+        //temp
+        LoseScreen.SetActive(false);
+        LevelFinishScreen.SetActive(false);
     }
 
     void FixedUpdate()
@@ -170,12 +181,35 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
+    public void LoseLife()
+    {
+        Lives -= 1;
+        HealthSystem.GetComponent<PlayerHealthSystem>().LoseHelth();
+
+        if (Lives == 0)
+        {
+            GameOver();
+        }
+    }
+
     public void UpdateTextValues()
     {
         //setup text values
         Wavestxt.text = "WAVES: " + waveNum + "/" + lvlWaves.Count;
-        livestxt.text = "LIVES: " + Lives;
         Crumbstxt.text =  Crumbs + " Crumbs ";
+    }
+
+    public void Restart()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene(CurrentScene);
+    }
+
+    void GameOver()
+    {
+        // load GameOver Screen
+        Time.timeScale = 0.0f;
+        LoseScreen.SetActive(true);
     }
 
     private void OnApplicationPause(bool pause)
