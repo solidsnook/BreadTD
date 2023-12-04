@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R5CT70AT58W",
         "name": "com.PinkTriangleReforged.breadTD",
-        "processId": 8954,
+        "processId": 8728,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -48,6 +48,12 @@
             "deviceId": "R5CT70AT58W",
             "name": "com.PinkTriangleReforged.breadTD",
             "processId": 8954,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.PinkTriangleReforged.breadTD",
+            "processId": 8728,
             "exited": false
         }
     ],
