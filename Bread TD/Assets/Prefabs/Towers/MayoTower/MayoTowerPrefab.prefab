@@ -212,15 +212,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8457e9e66a425f9468ff2747eaf15c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 2
   speed: 5
   fireRate: 1
   attackRange: 30
-  cost: 40
+  cost: 150
   sellValue: 0
   towerLevel: 0
   Shot: {fileID: 5720070428662026715, guid: 158177d4ed962764dbfbb13dda2700fc, type: 3}
-  aoe: 5
+  aoe: 1
   poisonAmount: 0
   animator: {fileID: -745638009746855447}
   ShootSoundSource: {fileID: 6572823451398439098}

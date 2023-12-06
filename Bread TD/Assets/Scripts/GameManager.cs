@@ -24,14 +24,17 @@ public class GameManager : MonoBehaviour
     public List<GameObject> AliveBreads;
 
     //lvl variables
+    public GameObject WaveAlert;
+    GameObject wave;
+
     public int Lives;
     int lvlScore;
     int waveNum;
-    GameObject wave;
     int currentWave;
     int waveDelay;
-    bool WaveFinished = false;
     int CurrentScene;
+    bool WaveFinished = false;
+
 
     //health
     public GameObject HealthSystem;
@@ -127,11 +130,11 @@ public class GameManager : MonoBehaviour
 
         wave = lvlWaves[waveNum - 1];
 
+        //start wave Alert
+        WaveAlert.GetComponent<WaveTextMover>().WaveAlert(WaveNum);
+
         //start wave 
         wave.GetComponent<WaveScript>().StartSpawn();
-
-        //delay before wave starts
-        //wave.GetComponent<waveScript>().startDelay;
 
         //Update text values
         UpdateTextValues();

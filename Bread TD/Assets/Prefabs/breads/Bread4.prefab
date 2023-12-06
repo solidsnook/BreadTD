@@ -79,7 +79,7 @@ MonoBehaviour:
   health: 0
   nextNode: 0
   ns: {fileID: 0}
-  moveSpeed: 2
+  moveSpeed: 1
 --- !u!114 &6984929855480103341
 MonoBehaviour:
   m_ObjectHideFlags: 0

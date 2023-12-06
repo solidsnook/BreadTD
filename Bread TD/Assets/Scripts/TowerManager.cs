@@ -14,15 +14,17 @@ public class TowerManager : MonoBehaviour
     GameObject SelectedButton;
 
     Vector2 CurrentButtonPos;
-    //josh code
-    public Sprite NotOccupied, Occupied;
 
-    //end josh code
+    public Sprite NotOccupied, Occupied;
 
     public void Start()
     {
         BuyScreenOBJ.SetActive(false);
-        SelectedButton.GetComponent<Image>().sprite = NotOccupied;
+
+        if (SelectedButton != null)
+        {
+            SelectedButton.GetComponent<Image>().sprite = NotOccupied;
+        }
     }
 
     //function will be called by button and whatever tower is chosen and passed tp this function will be placed
@@ -39,13 +41,12 @@ public class TowerManager : MonoBehaviour
         {
             Instantiate(Tower, CurrentButtonPos, Quaternion.identity);
             SelectedButton.GetComponent<ButtonPlacerScript>().SetOcupied(true);
-            //josh code
+
             if (SelectedButton.GetComponent<ButtonPlacerScript>().GetOcupied() == true) {
             SelectedButton.GetComponent<Image>().sprite = Occupied;
                 Debug.Log("button sprite change");
 
             }
-            //end josh code
             CloseBuyScreen();
         }
     }

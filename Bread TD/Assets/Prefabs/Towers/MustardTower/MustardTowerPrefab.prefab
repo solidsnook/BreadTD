@@ -88,7 +88,7 @@ MonoBehaviour:
   speed: 5
   fireRate: 1
   attackRange: 30
-  cost: 20
+  cost: 50
   sellValue: 0
   towerLevel: 0
   Shot: {fileID: 5720070428662026715, guid: dd9a1b788c065804db7f037817d9be00, type: 3}

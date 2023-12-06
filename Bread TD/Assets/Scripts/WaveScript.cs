@@ -27,6 +27,12 @@ public class WaveScript : MonoBehaviour
     public void StartSpawn()
     {
         Debug.Log("SpawnRoutineStarted");
+        StartCoroutine(delayRoutine());
+    }
+
+    IEnumerator delayRoutine()
+    {
+        yield return new WaitForSeconds(5);
         StartCoroutine(SpawnRoutine());
     }
 
