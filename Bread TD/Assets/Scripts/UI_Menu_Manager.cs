@@ -13,6 +13,12 @@ public class UI_Menu_Manager : MonoBehaviour
     public GameObject KetchupDes;
     public GameObject MustardDes;
     public GameObject MayoDes;
+    public GameObject EggDes;
+
+    public GameObject bread1Des;
+    public GameObject bread2Des;
+    public GameObject bread3Des;
+    public GameObject bread4Des;
 
     public Camera camera;
 
@@ -106,7 +112,27 @@ public class UI_Menu_Manager : MonoBehaviour
     {
         MayoDes.SetActive(true);
     }
+    public void EggDescription()
+    {
+        EggDes.SetActive(true);
+    }
+    public void Bread1Description()
+    {
+        bread1Des.SetActive(true);
+    }
 
+    public void Bread2Description()
+    {
+        bread2Des.SetActive(true);
+    }
+    public void Bread3Description()
+    {
+        bread3Des.SetActive(true);
+    }
+    public void Bread4Description()
+    {
+        bread4Des.SetActive(true);
+    }
     public void CloseDescription(GameObject Description)
     {
         Debug.Log("closing description");

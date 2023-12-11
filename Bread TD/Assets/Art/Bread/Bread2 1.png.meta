@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: aace499a4d39da4479e139db512bcfe8
+guid: 0c8e9b0b14deba94eaa7a1422dd3cfd4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8967367877476366968
-    second: eggbutton_0
+      213: -3455443325045103525
+    second: Bread2 1_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -48,16 +48,16 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -122,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eggbutton_0
+      name: Bread2 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 600
-        height: 190
+        x: 33
+        y: 24
+        width: 422
+        height: 456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +136,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 885c5c43d628d8380800000000000000
-      internalID: -8967367877476366968
+      spriteID: b5421358a9ccb00d0800000000000000
+      internalID: -3455443325045103525
       vertices: []
       indices: 
       edges: []
@@ -153,7 +153,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      eggbutton_0: -8967367877476366968
+      Bread2 1_0: -3455443325045103525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

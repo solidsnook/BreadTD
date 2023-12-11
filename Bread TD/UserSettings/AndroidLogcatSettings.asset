@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "RF8M33WZMWD",
+    "m_SelectedDeviceId": "R5CT70AT58W",
     "m_SelectedPackage": {
         "deviceId": "R5CT70AT58W",
         "name": "com.PinkTriangleReforged.breadTD",
-        "processId": 16035,
+        "processId": 20150,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,67 +11,43 @@
         {
             "deviceId": "R5CT70AT58W",
             "name": "com.PinkTriangleReforged.breadTD",
-            "processId": 20488,
-            "exited": true
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.sec.android.app.launcher",
-            "processId": 3936,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.PinkTriangleReforged.breadTD",
-            "processId": 25843,
-            "exited": true
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.PinkTriangleReforged.breadTD",
-            "processId": 7754,
-            "exited": true
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.PinkTriangleReforged.breadTD",
-            "processId": 8810,
-            "exited": true
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.PinkTriangleReforged.breadTD",
-            "processId": 22518,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.PinkTriangleReforged.breadTD",
-            "processId": 8954,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CT70AT58W",
-            "name": "com.PinkTriangleReforged.breadTD",
             "processId": 8728,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R5CT70AT58W",
             "name": "com.PinkTriangleReforged.breadTD",
             "processId": 10726,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R5CT70AT58W",
             "name": "com.PinkTriangleReforged.breadTD",
             "processId": 14056,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R5CT70AT58W",
             "name": "com.PinkTriangleReforged.breadTD",
             "processId": 16035,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.sec.android.app.launcher",
+            "processId": 29646,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.PinkTriangleReforged.breadTD",
+            "processId": 17247,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CT70AT58W",
+            "name": "com.PinkTriangleReforged.breadTD",
+            "processId": 20150,
             "exited": false
         }
     ],
