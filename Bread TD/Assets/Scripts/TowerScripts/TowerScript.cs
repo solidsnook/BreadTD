@@ -15,7 +15,7 @@ public class TowerScript : MonoBehaviour
     public float speed;             // How fast the shot can move
     public float fireRate;          // How fast the tower can shoot
     public float attackRange;       // How far can the enemy be for the tower to shoot
-    public int cost;              // How much the tower costs to place down
+    public int cost;                // How much the tower costs to place down
     public float sellValue;         // How much you can sell the tower for
     public int towerLevel;          // What tower level the tower is currently on
     public GameObject Shot;         // Prefab for the Ketchup Shot
@@ -24,6 +24,7 @@ public class TowerScript : MonoBehaviour
     private GameObject enemy;
     private float time = 0f;
     public Animator animator;
+    public int shotAmount;
 
     //Audio Variable Declaration
     public AudioSource ShootSoundSource;
