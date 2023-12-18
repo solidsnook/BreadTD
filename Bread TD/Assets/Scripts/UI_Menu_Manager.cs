@@ -45,7 +45,7 @@ public class UI_Menu_Manager : MonoBehaviour
         float targetaspect = 16.0f / 9.0f;
         float windowaspect = (float)Screen.width / (float)Screen.height;
         float scaleheight = windowaspect / targetaspect;
-        //Camera camera = GetComponent<Camera>();
+        Camera camera = GetComponent<Camera>();
 
         if (scaleheight < 1.0f)
         {

@@ -10,11 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4703662571691067585}
   - component: {fileID: 2158256077480292575}
-  - component: {fileID: 940322925789909724}
-  - component: {fileID: 1229982266445615866}
   - component: {fileID: 2632638098691114110}
   m_Layer: 0
-  m_Name: Converyor1
+  m_Name: Converyor3(2 Grid)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,14 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6771261951823817718}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.38344955, y: 0.7739758, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 11.8, y: -5.6, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &2158256077480292575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75,8 +73,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 1788027095786227381, guid: e742879ecb59de94daf071864215f08e, type: 3}
+  m_SortingOrder: -35
+  m_Sprite: {fileID: 3756348715503637000, guid: a0ad950451faf6642826e54cbeb3b618, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,36 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &940322925789909724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6771261951823817718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: b0e43aeb3256d00478fc414a46e583f4, type: 3}
---- !u!114 &1229982266445615866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6771261951823817718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CategoryHash: 3.380028e-19
-  m_labelHash: 6.91293e-26
-  m_SpriteKey: 0
-  m_SpriteHash: 487551759
 --- !u!95 &2632638098691114110
 Animator:
   serializedVersion: 7
@@ -127,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 6771261951823817718}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cf2c7990d54392c42bb57afba6d5e532, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9c11f62bc90b18244ba572b27dc89b56, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

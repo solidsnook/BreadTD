@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 35eedf5832b91c848aaa8be6466142ab
+guid: 2223e9a84463c2e45984fd2182078e55
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5228494831698174874
-    second: conveyor State 4_0
+      213: -6554709958083442716
+    second: conveyor State 2_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -122,22 +122,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: conveyor State 4_0
+      name: conveyor State 2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 8000
+        width: 2000
         height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a93e55109585f8840800000000000000
-      internalID: 5228494831698174874
+      spriteID: 4e788be750ef805a0800000000000000
+      internalID: -6554709958083442716
       vertices: []
       indices: 
       edges: []
@@ -145,7 +145,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -153,7 +153,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      conveyor State 4_0: 5228494831698174874
+      conveyor State 2_0: -6554709958083442716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Conveoyr
+  m_Name: Conveoyr2
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1788027095786227381, guid: e742879ecb59de94daf071864215f08e, type: 3}
+      value: {fileID: 3756348715503637000, guid: ad772afecd032f4478c41d3d03131923, type: 3}
     - time: 0.11666667
-      value: {fileID: 5228494831698174874, guid: 7850a58cc16feec45985ae7bad1cdbac, type: 3}
+      value: {fileID: -6554709958083442716, guid: ff4a4c5bfbbb0d845ba2b007cb69f7ae, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1788027095786227381, guid: e742879ecb59de94daf071864215f08e, type: 3}
-    - {fileID: 5228494831698174874, guid: 7850a58cc16feec45985ae7bad1cdbac, type: 3}
+    - {fileID: 3756348715503637000, guid: ad772afecd032f4478c41d3d03131923, type: 3}
+    - {fileID: -6554709958083442716, guid: ff4a4c5bfbbb0d845ba2b007cb69f7ae, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
