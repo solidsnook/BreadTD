@@ -27,6 +27,15 @@ public class TowerManager : MonoBehaviour
         }
     }
 
+    public void TowerDeleted()
+    {
+        if (SelectedButton != null && SelectedButton.GetComponent<ButtonPlacerScript>().GetOcupied())
+        {
+            SelectedButton.GetComponent<Image>().sprite = NotOccupied;
+            SelectedButton.GetComponent<ButtonPlacerScript>().SetOcupied(false);
+        }
+    }
+
     //function will be called by button and whatever tower is chosen and passed tp this function will be placed
     public void TowerPlace(GameObject Tower)
     {

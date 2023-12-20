@@ -35,7 +35,6 @@ public class GameManager : MonoBehaviour
     int CurrentScene;
     bool WaveFinished = false;
 
-
     //health
     public GameObject HealthSystem;
 

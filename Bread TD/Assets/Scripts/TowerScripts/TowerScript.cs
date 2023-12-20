@@ -18,19 +18,19 @@ public class TowerScript : MonoBehaviour
     public int cost;                // How much the tower costs to place down
     public float sellValue;         // How much you can sell the tower for
     public int towerLevel;          // What tower level the tower is currently on
+    public int shotAmount;
     public GameObject Shot;         // Prefab for the Ketchup Shot
     public float aoe;               // How big the area of damage is 
     public int poisonAmount;        // How many times the damage is taken
     private GameObject enemy;
     private float time = 0f;
     public Animator animator;
-    public int shotAmount;
+
+    private TowerManager towerManager;
 
     //Audio Variable Declaration
     public AudioSource ShootSoundSource;
     public AudioClip ShootSoundEffect;
-
- 
 
     // Update is called once per frame
     void Update()
@@ -51,29 +51,41 @@ public class TowerScript : MonoBehaviour
                 time = 0f;
             }
         }
+
+        if (shotAmount <= 0)
+        {
+            //Destroy(this.gameObject);
+            //towerManager.TowerDeleted();
+        }
     }
     void Shoot()
     {
-        // Position of Tower
-        float x = this.transform.position.x;
-        float y = this.transform.position.y;
+        // If the tower runs out of shots it is destroyed
+        if (shotAmount > 0)
+        {
+            // Position of Tower
+            float x = this.transform.position.x;
+            float y = this.transform.position.y;
 
-        // Play Shooting Animation
-        animator.SetTrigger("IsShooting?");
-        ShootSoundSource.PlayOneShot(ShootSoundEffect);
+            // Play Shooting Animation
+            animator.SetTrigger("IsShooting?");
+            ShootSoundSource.PlayOneShot(ShootSoundEffect);
 
-        // Spawn Ketchup Shot
-        GameObject currentShot = Instantiate(Shot, new Vector2(x, y + 1.2f), Quaternion.identity);
+            // Spawn Ketchup Shot
+            GameObject currentShot = Instantiate(Shot, new Vector2(x, y + 1.2f), Quaternion.identity);
 
-        // Adding new script to shot
-        ShotScript shot = currentShot.GetComponent<ShotScript>();
+            // Adding new script to shot
+            ShotScript shot = currentShot.GetComponent<ShotScript>();
 
-        // Save speed to new shot script
-        shot.shotSpeed = speed;
-        shot.Damage = damage;
-        shot.target = enemy;
-        shot.aoeRange = aoe;
-        shot.poisonAmount = poisonAmount;
+            // Save speed to new shot script
+            shot.shotSpeed = speed;
+            shot.Damage = damage;
+            shot.target = enemy;
+            shot.aoeRange = aoe;
+            shot.poisonAmount = poisonAmount;
+
+            shotAmount--;
+        }
     }
 
     void OnTriggerStay2D(Collider2D collision)
