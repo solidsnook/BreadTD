@@ -5,6 +5,7 @@ using UnityEngine;
 public class WaveText : MonoBehaviour
 {
     float MoveSpeed;
+    float SetSpeed;
 
     GameObject[] Targets;
 
@@ -13,6 +14,8 @@ public class WaveText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //text takes nodes and travels towards nodes starting fast and then slowing down when reaching first node and then speeding up for second node
+
         if (Targets == null) return;
 
         //if targets finished then destroy this object
@@ -22,9 +25,9 @@ public class WaveText : MonoBehaviour
             return;
         }
 
+        //movespeed is calculated based on distance from the starting point to next target and the setspeed of the text
         float distance = Vector3.Distance(transform.localPosition, Targets[nextTarget].transform.localPosition);
-
-        MoveSpeed = (0.0001f * distance * distance) + 5f;
+        MoveSpeed = ((0.0001f * distance * distance) + 5f) * SetSpeed;
 
         //move this text to the target
         if (nextTarget == 1)
@@ -44,7 +47,7 @@ public class WaveText : MonoBehaviour
 
     public void Initialize(float speed, GameObject[] Nodes)
     { 
-        MoveSpeed = speed;
+        SetSpeed = speed;
         Targets = Nodes;
     }
 }

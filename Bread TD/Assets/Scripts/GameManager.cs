@@ -159,6 +159,8 @@ public class GameManager : MonoBehaviour
     public void RemoveBread(GameObject bread)
     {
         AliveBreads.Remove(bread);
+        //add bread destroyed to player stats
+        PlayerPrefs.SetInt("BreadsDestroyed", PlayerPrefs.GetInt("BreadsDestroyed") + 1);
     }
 
     //functions for crumbs(Money) system

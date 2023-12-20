@@ -9,6 +9,7 @@ public class UI_Menu_Manager : MonoBehaviour
     public GameObject MainMenu;
     public GameObject TowersMenu;
     public GameObject SettingsMenu;
+    public GameObject StatsMenu;
 
     public GameObject KetchupDes;
     public GameObject MustardDes;
@@ -35,17 +36,26 @@ public class UI_Menu_Manager : MonoBehaviour
         MainMenu.SetActive(true);
         SettingsMenu.SetActive(false);
         TowersMenu.SetActive(false);
+        StatsMenu.SetActive(false);
     }
 
     private void RescaleCamera()
     {
+        //check if camera is not null
+        if (camera == null)
+        {
+            Debug.Log("Event System Camera Not Assigned");
+            return;
+        }
 
         if (Screen.width == ScreenSizeX && Screen.height == ScreenSizeY) return;
 
         float targetaspect = 16.0f / 9.0f;
         float windowaspect = (float)Screen.width / (float)Screen.height;
         float scaleheight = windowaspect / targetaspect;
-        Camera camera = GetComponent<Camera>();
+
+        //dont need this as camera will be assigned in editor
+        //camera = GetComponent<Camera>(); 
 
         if (scaleheight < 1.0f)
         {
