@@ -1,0 +1,599 @@
+fileFormatVersion: 2
+guid: 8eebc957e52a88040ba777fd3ef90b63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3485149110649417004
+    second: breadBadgeBasic 1_0
+  - first:
+      213: -4979084032015330361
+    second: breadBadgeBasic 1_1
+  - first:
+      213: 2867520799484904589
+    second: breadBadgeBasic 1_2
+  - first:
+      213: 2184638664957574524
+    second: breadBadgeBasic 1_3
+  - first:
+      213: 4617694416230303480
+    second: breadBadgeBasic 1_4
+  - first:
+      213: 8341324741442410744
+    second: breadBadgeBasic 1_5
+  - first:
+      213: 7542642472915603380
+    second: breadBadgeBasic 1_6
+  - first:
+      213: -1912456996371693680
+    second: breadBadgeBasic 1_7
+  - first:
+      213: -4395578096987903890
+    second: breadBadgeBasic 1_8
+  - first:
+      213: 5168262920808554112
+    second: breadBadgeBasic 1_9
+  - first:
+      213: -4010476724857451556
+    second: breadBadgeBasic 1_10
+  - first:
+      213: 7923749196551890119
+    second: breadBadgeBasic 1_11
+  - first:
+      213: -8464704396454545779
+    second: breadBadgeBasic 1_12
+  - first:
+      213: 7433408137498358488
+    second: breadBadgeBasic 1_13
+  - first:
+      213: -4316972349625770656
+    second: breadBadgeBasic 1_14
+  - first:
+      213: -1645688095735888615
+    second: breadBadgeBasic 1_15
+  - first:
+      213: 632060681968725108
+    second: breadBadgeBasic 1_16
+  - first:
+      213: -2784585476090657620
+    second: breadBadgeBasic 1_17
+  - first:
+      213: -4250801806478393879
+    second: breadBadgeBasic 1_18
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_0
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 624
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2de689a6acbd5030800000000000000
+      internalID: 3485149110649417004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_1
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 639
+        width: 84
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c318e4047db6eab0800000000000000
+      internalID: -4979084032015330361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_2
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 607
+        width: 62
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84875f69fa7bc720800000000000000
+      internalID: 2867520799484904589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 222
+        width: 420
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d31638a45615e10800000000000000
+      internalID: 2184638664957574524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 578
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f646b02b98551040800000000000000
+      internalID: 4617694416230303480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_5
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 551
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f81ad978a652c370800000000000000
+      internalID: 8341324741442410744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 510
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf88e1dd59dca860800000000000000
+      internalID: 7542642472915603380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_7
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 477
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ffd039e769575e0800000000000000
+      internalID: -1912456996371693680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_8
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 429
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e686c827205cff2c0800000000000000
+      internalID: -4395578096987903890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_9
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 392
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08edd9c6ebb59b740800000000000000
+      internalID: 5168262920808554112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 341
+        width: 24
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb46eacaace758c0800000000000000
+      internalID: -4010476724857451556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_11
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 304
+        width: 33
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c423c599efc6fd60800000000000000
+      internalID: 7923749196551890119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_12
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 259
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86b3a80334578a80800000000000000
+      internalID: -8464704396454545779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_13
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 229
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d276123155c82760800000000000000
+      internalID: 7433408137498358488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_14
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 195
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d5f5335880714c0800000000000000
+      internalID: -4316972349625770656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_15
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 156
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915c29a65675929e0800000000000000
+      internalID: -1645688095735888615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_16
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 175
+        width: 60
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47cac3967d785c800800000000000000
+      internalID: 632060681968725108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_17
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 145
+        width: 63
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca487ea434a2b59d0800000000000000
+      internalID: -2784585476090657620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeBasic 1_18
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 148
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed344a574e1205c0800000000000000
+      internalID: -4250801806478393879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      breadBadgeBasic 1_0: 3485149110649417004
+      breadBadgeBasic 1_1: -4979084032015330361
+      breadBadgeBasic 1_10: -4010476724857451556
+      breadBadgeBasic 1_11: 7923749196551890119
+      breadBadgeBasic 1_12: -8464704396454545779
+      breadBadgeBasic 1_13: 7433408137498358488
+      breadBadgeBasic 1_14: -4316972349625770656
+      breadBadgeBasic 1_15: -1645688095735888615
+      breadBadgeBasic 1_16: 632060681968725108
+      breadBadgeBasic 1_17: -2784585476090657620
+      breadBadgeBasic 1_18: -4250801806478393879
+      breadBadgeBasic 1_2: 2867520799484904589
+      breadBadgeBasic 1_3: 2184638664957574524
+      breadBadgeBasic 1_4: 4617694416230303480
+      breadBadgeBasic 1_5: 8341324741442410744
+      breadBadgeBasic 1_6: 7542642472915603380
+      breadBadgeBasic 1_7: -1912456996371693680
+      breadBadgeBasic 1_8: -4395578096987903890
+      breadBadgeBasic 1_9: 5168262920808554112
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

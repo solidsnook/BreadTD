@@ -1,0 +1,649 @@
+fileFormatVersion: 2
+guid: c8e74a2c04d88be478882c9aa21e8f01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4023824237636264662
+    second: breadBadgeSliver_0
+  - first:
+      213: 108494536452662993
+    second: breadBadgeSliver_1
+  - first:
+      213: 2040009866327899609
+    second: breadBadgeSliver_2
+  - first:
+      213: -1912081223678112863
+    second: breadBadgeSliver_3
+  - first:
+      213: 6587055110426140037
+    second: breadBadgeSliver_4
+  - first:
+      213: 5584791309479283696
+    second: breadBadgeSliver_5
+  - first:
+      213: 6785605054346290671
+    second: breadBadgeSliver_6
+  - first:
+      213: 6585955426929677679
+    second: breadBadgeSliver_7
+  - first:
+      213: -7202930293416233603
+    second: breadBadgeSliver_8
+  - first:
+      213: 7287368695714254005
+    second: breadBadgeSliver_9
+  - first:
+      213: -7304387014084628138
+    second: breadBadgeSliver_10
+  - first:
+      213: -7154002206425763466
+    second: breadBadgeSliver_11
+  - first:
+      213: -743173416588960604
+    second: breadBadgeSliver_12
+  - first:
+      213: -8882427926390555630
+    second: breadBadgeSliver_13
+  - first:
+      213: 2738164904537379840
+    second: breadBadgeSliver_14
+  - first:
+      213: 1088721220532973526
+    second: breadBadgeSliver_15
+  - first:
+      213: 2445749157111068068
+    second: breadBadgeSliver_16
+  - first:
+      213: 4229414710173671184
+    second: breadBadgeSliver_17
+  - first:
+      213: -5575683388287182590
+    second: breadBadgeSliver_18
+  - first:
+      213: -2492060450371952229
+    second: breadBadgeSliver_19
+  - first:
+      213: 798549978535505848
+    second: breadBadgeSliver_20
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: breadBadgeSliver_0
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 633
+        width: 198
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2aae233de77d730800000000000000
+      internalID: 4023824237636264662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_1
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 623
+        width: 64
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6e451c433718100800000000000000
+      internalID: 108494536452662993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 639
+        width: 84
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd34cc3a229f4c10800000000000000
+      internalID: 2040009866327899609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_3
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 633
+        width: 226
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1abc8f8f14ce675e0800000000000000
+      internalID: -1912081223678112863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_4
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 607
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d1fd429bbe96b50800000000000000
+      internalID: 6587055110426140037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_5
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 222
+        width: 420
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb83324b1a218d40800000000000000
+      internalID: 5584791309479283696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_6
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 577
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5e76268df4b2e50800000000000000
+      internalID: 6785605054346290671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_7
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 551
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6513b02193066b50800000000000000
+      internalID: 6585955426929677679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 511
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7576079f0d0a0c90800000000000000
+      internalID: -7202930293416233603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_9
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 477
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc8957f73fe12560800000000000000
+      internalID: 7287368695714254005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_10
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 429
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651728306ba91aa90800000000000000
+      internalID: -7304387014084628138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_11
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 391
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671b1a395e0e7bc90800000000000000
+      internalID: -7154002206425763466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_12
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 341
+        width: 26
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac93b117b7bfa5f0800000000000000
+      internalID: -743173416588960604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_13
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 303
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c3b70bcd64bb480800000000000000
+      internalID: -8882427926390555630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_14
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 259
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0045467297aeff520800000000000000
+      internalID: 2738164904537379840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_15
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 229
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df2c498e2aeb1f00800000000000000
+      internalID: 1088721220532973526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_16
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 195
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5f05776eb01f120800000000000000
+      internalID: 2445749157111068068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_17
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 155
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f96bf3546e1ba30800000000000000
+      internalID: 4229414710173671184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_18
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 175
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2099815ef713f92b0800000000000000
+      internalID: -5575683388287182590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_19
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 145
+        width: 64
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91a7c0593c6a6dd0800000000000000
+      internalID: -2492060450371952229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadBadgeSliver_20
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 147
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf210e79f4051b00800000000000000
+      internalID: 798549978535505848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      breadBadgeSliver_0: 4023824237636264662
+      breadBadgeSliver_1: 108494536452662993
+      breadBadgeSliver_10: -7304387014084628138
+      breadBadgeSliver_11: -7154002206425763466
+      breadBadgeSliver_12: -743173416588960604
+      breadBadgeSliver_13: -8882427926390555630
+      breadBadgeSliver_14: 2738164904537379840
+      breadBadgeSliver_15: 1088721220532973526
+      breadBadgeSliver_16: 2445749157111068068
+      breadBadgeSliver_17: 4229414710173671184
+      breadBadgeSliver_18: -5575683388287182590
+      breadBadgeSliver_19: -2492060450371952229
+      breadBadgeSliver_2: 2040009866327899609
+      breadBadgeSliver_20: 798549978535505848
+      breadBadgeSliver_3: -1912081223678112863
+      breadBadgeSliver_4: 6587055110426140037
+      breadBadgeSliver_5: 5584791309479283696
+      breadBadgeSliver_6: 6785605054346290671
+      breadBadgeSliver_7: 6585955426929677679
+      breadBadgeSliver_8: -7202930293416233603
+      breadBadgeSliver_9: 7287368695714254005
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

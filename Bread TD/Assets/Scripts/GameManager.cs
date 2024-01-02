@@ -164,24 +164,28 @@ public class GameManager : MonoBehaviour
     }
 
     //functions for crumbs(Money) system
-    public void AddCrumbs(int crumAmount)
+    public void AddCrumbs(int crumbAmount)
     {
-        Crumbs += crumAmount;
+        Crumbs += crumbAmount;
 
         UpdateTextValues();
     }
 
-    public bool RemoveCrumbs(int crumAmount)
+    public bool RemoveCrumbs(int crumbAmount)
     {
         //if crum cost is too high for balence return false to identify that the cost cannot be paid
-        if (Crumbs - crumAmount < 0)
+        if (Crumbs - crumbAmount < 0)
         {
             return false;
         }
 
-        Crumbs -= crumAmount;
+        Crumbs -= crumbAmount;
 
+        //update text values
         UpdateTextValues();
+
+        //update crumbs spent stat
+        PlayerPrefs.SetInt("CrumbsSpent", PlayerPrefs.GetInt("CrumbsSpent") + crumbAmount);
 
         return true;
     }
@@ -190,6 +194,9 @@ public class GameManager : MonoBehaviour
     {
         Lives -= 1;
         HealthSystem.GetComponent<PlayerHealthSystem>().LoseHelth();
+
+        //update life lost stat
+        PlayerPrefs.SetInt("LifeLost", PlayerPrefs.GetInt("LifeLost") + 1);
 
         if (Lives == 0)
         {
