@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     int CurrentScene;
     bool WaveFinished = false;
 
+    float PlayTime;
 
     //health
     public GameObject HealthSystem;
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
         lvlScore = 0;
         waveNum = 1;
         Crumbs = 100;
+        PlayTime = Time.deltaTime;
 
         UpdateTextValues();
 
@@ -106,6 +108,9 @@ public class GameManager : MonoBehaviour
         //need to add lvl score to total score
         Score += lvlScore;
 
+        PlayTime = Time.deltaTime - PlayTime;
+        PlayerPrefs.SetInt("TimePlayed", PlayerPrefs.GetInt("TimePlayed") + (int)PlayTime);
+
         //////TEMPORARY: next level loaded after final level done need to remove when adding the end lvl screen//////
         int ActiveSceneIndex = SceneManager.GetActiveScene().buildIndex;
         ActiveSceneIndex++;
@@ -121,7 +126,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("all Waves Finished");
             finishLevel();
-
+            
             return;
         }
 
@@ -140,13 +145,18 @@ public class GameManager : MonoBehaviour
         UpdateTextValues();
     }
 
-    //Not Implimented yet
+    //needs to be implimented
     bool IsLevelLocked(int level) 
     {
-        //check if specific level is locked
-        bool lvllocked = lvlLockList[level];
-        
-        return lvllocked;
+        //returns specific level lock status
+        return lvlLockList[level];
+    }
+
+    void GameOver()
+    {
+        // load GameOver Screen
+        Time.timeScale = 0.0f;
+        LoseScreen.SetActive(true);
     }
 
     /*Public Functions*/
@@ -176,6 +186,7 @@ public class GameManager : MonoBehaviour
         //if crum cost is too high for balence return false to identify that the cost cannot be paid
         if (Crumbs - crumbAmount < 0)
         {
+            Debug.Log("Not Enough Crumbs");
             return false;
         }
 
@@ -213,15 +224,15 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
+        //restart current level
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(CurrentScene);
     }
 
-    void GameOver()
+    public void MainMenu()
     {
-        // load GameOver Screen
-        Time.timeScale = 0.0f;
-        LoseScreen.SetActive(true);
+        //Load Menu Scene
+        SceneManager.LoadScene(0);
     }
 
     private void OnApplicationPause(bool pause)

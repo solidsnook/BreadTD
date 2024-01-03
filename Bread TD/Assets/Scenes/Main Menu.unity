@@ -11678,9 +11678,9 @@ MonoBehaviour:
   TowersGold: 150
   TowersBadge: {fileID: 1724483243}
   LifeLostTxt: {fileID: 626917625}
-  LifeCopper: 3
-  LifeSilver: 9
-  LifeGold: 15
+  LifeCopper: 10
+  LifeSilver: 25
+  LifeGold: 50
   LifeBadge: {fileID: 698061136}
   TimePlayedTxt: {fileID: 348098697}
   TimeCopper: 600

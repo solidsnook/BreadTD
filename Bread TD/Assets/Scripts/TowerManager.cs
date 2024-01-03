@@ -27,27 +27,32 @@ public class TowerManager : MonoBehaviour
         }
     }
 
-    //function will be called by button and whatever tower is chosen and passed tp this function will be placed
+    //function will be called by button and whatever tower is chosen and passed to this function will be placed
     public void TowerPlace(GameObject Tower)
     {
+        //check if selected button is ocupied
         if (SelectedButton.GetComponent<ButtonPlacerScript>().IsOcupied())
         {
             Debug.Log("Cant PLace Tower Here Alrready Has Tower Placed");
             return;
         }
 
+        //place tower if not rocupied and reduce crumb count
         int cost = Tower.GetComponent<TowerScript>().cost;
+
         if (gameManager.GetComponent<GameManager>().RemoveCrumbs(cost))
         {
             Instantiate(Tower, CurrentButtonPos, Quaternion.identity);
             SelectedButton.GetComponent<ButtonPlacerScript>().SetOcupied(true);
 
-            if (SelectedButton.GetComponent<ButtonPlacerScript>().GetOcupied() == true) {
             SelectedButton.GetComponent<Image>().sprite = Occupied;
-                Debug.Log("button sprite change");
+            Debug.Log("Tower Placed");
 
-            }
+            //add tower placed to player stats
+            PlayerPrefs.SetInt("TowersPlaced", PlayerPrefs.GetInt("TowersPlaced") + 1);
+
             CloseBuyScreen();
+            return;
         }
     }
 
