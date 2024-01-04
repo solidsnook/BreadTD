@@ -17,9 +17,15 @@ public class TowerManager : MonoBehaviour
 
     public Sprite NotOccupied, Occupied;
 
+    public GameObject SellScreenOBJ;
+
+    public GameObject spawnedTower;
+
+
     public void Start()
     {
         BuyScreenOBJ.SetActive(false);
+        SellScreenOBJ.SetActive(false);
 
         if (SelectedButton != null)
         {
@@ -34,6 +40,7 @@ public class TowerManager : MonoBehaviour
         if (SelectedButton.GetComponent<ButtonPlacerScript>().IsOcupied())
         {
             Debug.Log("Cant PLace Tower Here Alrready Has Tower Placed");
+
             return;
         }
 
@@ -51,8 +58,28 @@ public class TowerManager : MonoBehaviour
             //add tower placed to player stats
             PlayerPrefs.SetInt("TowersPlaced", PlayerPrefs.GetInt("TowersPlaced") + 1);
 
+            spawnedTower = Tower;
+
             CloseBuyScreen();
             return;
+        }
+    }
+
+
+    public void OpenScreenChecker(GameObject Button)
+    {
+        SelectedButton = Button;
+
+        //if (SelectedButton == Occupied)
+        if (SelectedButton.GetComponent<ButtonPlacerScript>().GetOcupied() == false)
+        {
+            OpenBuyScreen(SelectedButton);
+
+        }
+        if (SelectedButton.GetComponent<ButtonPlacerScript>().GetOcupied() == true)
+        {
+            OpenSellScreen(SelectedButton);
+
         }
     }
 
@@ -68,4 +95,33 @@ public class TowerManager : MonoBehaviour
     {
         BuyScreenOBJ.SetActive(false);
     }
+
+
+    public void OpenSellScreen(GameObject Button)
+    {
+        SellScreenOBJ.SetActive(true);
+
+        SelectedButton = Button;
+
+        
+    }
+
+    public void CloseSellScreen()
+    {
+        SellScreenOBJ.SetActive(false);
+    }
+
+
+    public void TowerSale(GameObject tower) 
+    {
+        //get tower
+        spawnedTower = tower;
+        //remove it
+        SelectedButton.GetComponent<ButtonPlacerScript>().SetOcupied(false);
+        //add crumbs (do meth)  - @SHAUN do this. teehee
+        //set ocupied to false
+
+        return;
+    }
+
 }

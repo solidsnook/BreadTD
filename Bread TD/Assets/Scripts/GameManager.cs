@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
     {
         //first check if level is locked and return false if it is
         if (IsLevelLocked(lvl)) return false;
-
+        //Time.timeScale = 1.0f;
         return true;
     }
 
@@ -120,7 +120,8 @@ public class GameManager : MonoBehaviour
     }
 
     void StartWave(int WaveNum)
-    { 
+    {
+        ResumeGameTime();
         //lvl is finished when all waves are done
         if (lvlWaves.Count < WaveNum)
         {
@@ -238,5 +239,11 @@ public class GameManager : MonoBehaviour
     private void OnApplicationPause(bool pause)
     {
       
+    }
+
+    public void ResumeGameTime()
+    {
+        Time.timeScale = 1.0f;
+
     }
 }
