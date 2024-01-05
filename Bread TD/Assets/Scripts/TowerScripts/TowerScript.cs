@@ -16,7 +16,7 @@ public class TowerScript : MonoBehaviour
     public float fireRate;          // How fast the tower can shoot
     public float attackRange;       // How far can the enemy be for the tower to shoot
     public int cost;              // How much the tower costs to place down
-    public float sellValue;         // How much you can sell the tower for
+    public int sellValue;         // How much you can sell the tower for
     public int towerLevel;          // What tower level the tower is currently on
     public GameObject Shot;         // Prefab for the Ketchup Shot
     public float aoe;               // How big the area of damage is 
@@ -35,8 +35,6 @@ public class TowerScript : MonoBehaviour
     void Update()
     {
         time = time + 1f * Time.deltaTime;
-
-        sellValue = cost / 2 * towerLevel;
 
         // Updates the attackRange variable to the radius of the collider so it can be easily changed
         GetComponent<CircleCollider2D>().radius = attackRange;

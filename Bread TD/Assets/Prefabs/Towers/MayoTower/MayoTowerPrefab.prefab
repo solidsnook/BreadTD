@@ -217,7 +217,7 @@ MonoBehaviour:
   fireRate: 1
   attackRange: 30
   cost: 150
-  sellValue: 0
+  sellValue: 100
   towerLevel: 0
   Shot: {fileID: 5720070428662026715, guid: 158177d4ed962764dbfbb13dda2700fc, type: 3}
   aoe: 1

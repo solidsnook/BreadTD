@@ -8,7 +8,7 @@ public class ButtonPlacerScript : MonoBehaviour
 {
     //button stats
     private bool Ocupied;
-
+    public GameObject OcupiedTower;
 
 
     // Start is called before the first frame update
@@ -25,12 +25,6 @@ public class ButtonPlacerScript : MonoBehaviour
     public void SetOcupied(bool Set)
     {
         Ocupied = Set;
-    }
-
-
-    public bool GetOcupied()
-    {
-        return Ocupied;
     }
 }
  

@@ -13,8 +13,6 @@ public class TowerManager : MonoBehaviour
     [SerializeField]
     GameObject SelectedButton;
 
-    Vector2 CurrentButtonPos;
-
     public Sprite NotOccupied, Occupied;
 
     public GameObject SellScreenOBJ;
@@ -49,16 +47,15 @@ public class TowerManager : MonoBehaviour
 
         if (gameManager.GetComponent<GameManager>().RemoveCrumbs(cost))
         {
-            Instantiate(Tower, CurrentButtonPos, Quaternion.identity);
-            SelectedButton.GetComponent<ButtonPlacerScript>().SetOcupied(true);
+            GameObject NewTower = Instantiate(Tower, SelectedButton.transform.position, Quaternion.identity);
 
+            SelectedButton.GetComponent<ButtonPlacerScript>().SetOcupied(true);
+            SelectedButton.GetComponent<ButtonPlacerScript>().OcupiedTower = NewTower;
             SelectedButton.GetComponent<Image>().sprite = Occupied;
             Debug.Log("Tower Placed");
 
             //add tower placed to player stats
             PlayerPrefs.SetInt("TowersPlaced", PlayerPrefs.GetInt("TowersPlaced") + 1);
-
-            spawnedTower = Tower;
 
             CloseBuyScreen();
             return;
@@ -71,15 +68,13 @@ public class TowerManager : MonoBehaviour
         SelectedButton = Button;
 
         //if (SelectedButton == Occupied)
-        if (SelectedButton.GetComponent<ButtonPlacerScript>().GetOcupied() == false)
+        if (SelectedButton.GetComponent<ButtonPlacerScript>().IsOcupied() == false)
         {
             OpenBuyScreen(SelectedButton);
-
         }
-        if (SelectedButton.GetComponent<ButtonPlacerScript>().GetOcupied() == true)
+        if (SelectedButton.GetComponent<ButtonPlacerScript>().IsOcupied() == true)
         {
             OpenSellScreen(SelectedButton);
-
         }
     }
 
@@ -88,7 +83,6 @@ public class TowerManager : MonoBehaviour
         BuyScreenOBJ.SetActive(true);
 
         SelectedButton = Button;
-        CurrentButtonPos = SelectedButton.transform.position;
     }
 
     public void CloseBuyScreen()
@@ -102,8 +96,6 @@ public class TowerManager : MonoBehaviour
         SellScreenOBJ.SetActive(true);
 
         SelectedButton = Button;
-
-        
     }
 
     public void CloseSellScreen()
@@ -112,14 +104,21 @@ public class TowerManager : MonoBehaviour
     }
 
 
-    public void TowerSale(GameObject tower) 
+    public void TowerSale() 
     {
-        //get tower
-        spawnedTower = tower;
-        //remove it
-        SelectedButton.GetComponent<ButtonPlacerScript>().SetOcupied(false);
-        //add crumbs (do meth)  - @SHAUN do this. teehee
         //set ocupied to false
+        SelectedButton.GetComponent<ButtonPlacerScript>().SetOcupied(false);
+        SelectedButton.GetComponent<Image>().sprite = NotOccupied;
+        GameObject RefundTower = SelectedButton.GetComponent<ButtonPlacerScript>().OcupiedTower;
+        SelectedButton.GetComponent<ButtonPlacerScript>().OcupiedTower = null;
+
+        //add crumbs
+        int RefundAmount = RefundTower.GetComponent<TowerScript>().sellValue;
+        gameManager.GetComponent<GameManager>().AddCrumbs(RefundAmount);
+        Debug.Log("Tower Sold");
+
+        //delete tower
+        Destroy(RefundTower);
 
         return;
     }
