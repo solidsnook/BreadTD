@@ -10,6 +10,7 @@ public class UI_Menu_Manager : MonoBehaviour
     public GameObject TowersMenu;
     public GameObject SettingsMenu;
     public GameObject StatsMenu;
+    public GameObject LevelMenu;
 
     public GameObject KetchupDes;
     public GameObject MustardDes;
@@ -37,6 +38,7 @@ public class UI_Menu_Manager : MonoBehaviour
         SettingsMenu.SetActive(false);
         TowersMenu.SetActive(false);
         StatsMenu.SetActive(false);
+        LevelMenu.SetActive(false);
     }
 
     private void RescaleCamera()
@@ -91,10 +93,10 @@ public class UI_Menu_Manager : MonoBehaviour
         RescaleCamera();
     }
 
-    public void PlayGame()
+    public void PlayGame(int SeceneId)
     {
-        //set this to the main game scene
-        SceneManager.LoadScene("Scenes/Level 1");
+        //load selected lvl scene
+        SceneManager.LoadScene(SeceneId);
     }
 
     public void BackToMenu(GameObject CurrentMenu)
