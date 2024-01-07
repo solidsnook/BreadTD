@@ -25,6 +25,7 @@ public class TowerScript : MonoBehaviour
     private GameObject enemy;
     private float time = 0f;
     public Animator animator;
+    //public Sprite[] spriteList;
 
     private TowerManager towerManager;
 
@@ -35,6 +36,8 @@ public class TowerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //GetComponent<SpriteRenderer>().sprite = spriteList[shotAmount];
+
         time = time + 1f * Time.deltaTime;
 
         sellValue = cost / 2 * towerLevel;
@@ -58,6 +61,7 @@ public class TowerScript : MonoBehaviour
             //towerManager.TowerDeleted();
         }
     }
+
     void Shoot()
     {
         // If the tower runs out of shots it is destroyed
