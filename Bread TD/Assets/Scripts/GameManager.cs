@@ -15,8 +15,6 @@ public class GameManager : MonoBehaviour
     //values needed to be persistant accross scenes
     private static int Score = 0;
 
-    static List<bool> lvlLockList; //list of locked and unlocked waves
-
     //wave list for level
     public List<GameObject> lvlWaves;
 
@@ -28,7 +26,6 @@ public class GameManager : MonoBehaviour
     GameObject wave;
 
     public int Lives;
-    int lvlScore;
     int waveNum;
     int currentWave;
     int waveDelay;
@@ -63,7 +60,6 @@ public class GameManager : MonoBehaviour
 
         //setup lvl defaults
         Lives = 3;
-        lvlScore = 0;
         waveNum = 1;
         Crumbs = 100;
         PlayTime = Time.deltaTime;
@@ -89,13 +85,6 @@ public class GameManager : MonoBehaviour
     }
 
     /*Private Functions*/
-    bool LoadLevel(int lvl)
-    {
-        //first check if level is locked and return false if it is
-        if (IsLevelLocked(lvl)) return false;
-        //Time.timeScale = 1.0f;
-        return true;
-    }
 
     void finishLevel()
     {
@@ -105,15 +94,13 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        //need to add lvl score to total score
-        Score += lvlScore;
-
         PlayTime = Time.deltaTime - PlayTime;
         PlayerPrefs.SetInt("TimePlayed", PlayerPrefs.GetInt("TimePlayed") + (int)PlayTime);
 
         //////TEMPORARY: next level loaded after final level done need to remove when adding the end lvl screen//////
         int ActiveSceneIndex = SceneManager.GetActiveScene().buildIndex;
         ActiveSceneIndex++;
+        PlayerPrefs.SetInt("LevelProgression", ActiveSceneIndex); //unlocks next level
         SceneManager.LoadScene(ActiveSceneIndex);
 
         //open end of level screen
@@ -144,13 +131,6 @@ public class GameManager : MonoBehaviour
 
         //Update text values
         UpdateTextValues();
-    }
-
-    //needs to be implimented
-    bool IsLevelLocked(int level) 
-    {
-        //returns specific level lock status
-        return lvlLockList[level];
     }
 
     void GameOver()
