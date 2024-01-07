@@ -39,6 +39,8 @@ public class UI_Menu_Manager : MonoBehaviour
         TowersMenu.SetActive(false);
         StatsMenu.SetActive(false);
         LevelMenu.SetActive(false);
+
+        if (PlayerPrefs.HasKey("LevelProgression") == false) PlayerPrefs.SetInt("LevelProgression", 1);
     }
 
     private void RescaleCamera()
@@ -93,10 +95,16 @@ public class UI_Menu_Manager : MonoBehaviour
         RescaleCamera();
     }
 
-    public void PlayGame(int SeceneId)
+    public void PlayGame(int SceneId)
     {
+        if(PlayerPrefs.GetInt("LevelProgression") < SceneId)
+        {
+            Debug.Log("Level Is Locked");
+            return;
+        }
+
         //load selected lvl scene
-        SceneManager.LoadScene(SeceneId);
+        SceneManager.LoadScene(SceneId);
     }
 
     public void BackToMenu(GameObject CurrentMenu)
