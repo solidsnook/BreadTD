@@ -9,7 +9,7 @@ public class EggBombScript : MonoBehaviour
     // Declaring Variables
     public float damage;          // How much damage the shot does
     public float aoe;             // How big the explosion is
-    public float cost;            // How much the tower costs to place down
+    public int cost;            // How much the tower costs to place down
     public float fuseTime;        // How long until the bomb explodes
     public Animator animator;     // This is the animator for the egg bomb
 

@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   aoe: 10
-  cost: 0
+  cost: 250
   fuseTime: 2
   animator: {fileID: 1051929103033810427}
 --- !u!212 &3482058993976317522

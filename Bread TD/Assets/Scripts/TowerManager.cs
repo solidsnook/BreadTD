@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +19,10 @@ public class TowerManager : MonoBehaviour
     public GameObject SellScreenOBJ;
 
     public GameObject spawnedTower;
+
+    public GameObject eggBomb;
+
+    public Transform targetPoint;
 
 
     public void Start()
@@ -121,6 +126,43 @@ public class TowerManager : MonoBehaviour
         Destroy(RefundTower);
 
         return;
+    }
+
+    public void EggPlace()
+    {
+        // Finds every enemy currently in the level
+        GameObject[] breads = GameObject.FindGameObjectsWithTag("Enemy");
+
+        // If any enemies exist then execute code
+        if (breads.Length > 0)
+        {
+            // Creating variables
+            GameObject closestBread = null;
+            float minDist = Mathf.Infinity;
+            int cost = eggBomb.GetComponent<EggBombScript>().cost;
+
+            if (gameManager.GetComponent<GameManager>().RemoveCrumbs(cost))
+            {
+                // For each bread in the scene check the distance between the bread and the target point. 
+                // If the distance is less than the minimum distance then minimum distance is set to the new smaller distance
+                foreach (GameObject bread in breads)
+                {
+                    float distance = Vector3.Distance(bread.transform.position, targetPoint.position);
+
+                    if (distance < minDist)
+                    {
+                        minDist = distance;
+                        closestBread = bread;
+                    }
+                }
+
+                // If the closest bread was found then place egg bomb on its position
+                if (closestBread != null)
+                {
+                    Instantiate(eggBomb, closestBread.transform.position, Quaternion.identity);
+                }
+            }  
+        }
     }
 
 }

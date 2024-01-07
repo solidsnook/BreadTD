@@ -1345,7 +1345,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 258325053}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1607372110}
+        m_TargetAssemblyTypeName: TowerManager, Assembly-CSharp
+        m_MethodName: EggPlace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &258325053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2402,7 +2414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: b05f5043a4c6dca43acd3e1ae44b15b6, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: b05f5043a4c6dca43acd3e1ae44b15b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2584,7 +2596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 980c3370832c2b44fa0e91d33b6e1ba8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 980c3370832c2b44fa0e91d33b6e1ba8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3782,7 +3794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 3cfa45fcd4b11684f9cbdb61ec0056cc, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 3cfa45fcd4b11684f9cbdb61ec0056cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4245,7 +4257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 3cfa45fcd4b11684f9cbdb61ec0056cc, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 3cfa45fcd4b11684f9cbdb61ec0056cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5765,7 +5777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 3cfa45fcd4b11684f9cbdb61ec0056cc, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 3cfa45fcd4b11684f9cbdb61ec0056cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5969,7 +5981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: b05f5043a4c6dca43acd3e1ae44b15b6, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: b05f5043a4c6dca43acd3e1ae44b15b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6034,7 +6046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 3cfa45fcd4b11684f9cbdb61ec0056cc, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 3cfa45fcd4b11684f9cbdb61ec0056cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7363,6 +7375,8 @@ MonoBehaviour:
   Occupied: {fileID: -1752430859451195970, guid: 01d09bc51eb083249973cd78d48e8457, type: 3}
   SellScreenOBJ: {fileID: 1170199328}
   spawnedTower: {fileID: 0}
+  eggBomb: {fileID: 0}
+  targetPoint: {fileID: 0}
 --- !u!1 &1613059002
 GameObject:
   m_ObjectHideFlags: 0
@@ -7646,7 +7660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: b05f5043a4c6dca43acd3e1ae44b15b6, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: b05f5043a4c6dca43acd3e1ae44b15b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7711,7 +7725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 3cfa45fcd4b11684f9cbdb61ec0056cc, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4703662571691067585, guid: 3cfa45fcd4b11684f9cbdb61ec0056cc, type: 3}
       propertyPath: m_LocalPosition.x
