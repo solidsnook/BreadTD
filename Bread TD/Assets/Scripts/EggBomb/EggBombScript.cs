@@ -6,20 +6,26 @@ using static UnityEngine.GraphicsBuffer;
 
 public class EggBombScript : MonoBehaviour
 {
-    // Declaring Variables
+    // Declaring Public Variables
     public float damage;          // How much damage the shot does
     public float aoe;             // How big the explosion is
     public int cost;            // How much the tower costs to place down
     public float fuseTime;        // How long until the bomb explodes
     public Animator animator;     // This is the animator for the egg bomb
+    public AudioSource EggFuseSoundSource;
+    public AudioSource EggSplatSoundSource;
+    public AudioClip EggSplatSoundEffect;
 
     //public Sprite lit;            // Temp
     //public Sprite blow;           // Temp
 
+    // Declaring Private Variables
     private GameObject enemy;
+    private bool isPlayed;
 
     void Start()
     {
+        isPlayed = false;
         // Plays Egg Bomb Lit animation
         //this.GetComponent<SpriteRenderer>().sprite = lit;
     }
@@ -41,6 +47,13 @@ public class EggBombScript : MonoBehaviour
         {
             // Plays Egg Bomb Explosion animation o7
             animator.SetTrigger("IsExploding?");
+            EggFuseSoundSource.Stop();
+
+            if (!isPlayed)
+            {
+                EggSplatSoundSource.PlayOneShot(EggSplatSoundEffect);
+                isPlayed = true;
+            }
 
             Debug.Log("BLOW");
 

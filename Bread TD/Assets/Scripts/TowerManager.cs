@@ -24,7 +24,6 @@ public class TowerManager : MonoBehaviour
 
     public Transform targetPoint;
 
-
     public void Start()
     {
         BuyScreenOBJ.SetActive(false);

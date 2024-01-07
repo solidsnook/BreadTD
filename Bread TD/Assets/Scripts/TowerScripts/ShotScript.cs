@@ -13,6 +13,8 @@ public class ShotScript : MonoBehaviour
     public int poisonAmount;    // How many times the damage is taken
     public Rigidbody2D rb;
     public Animator animator;
+    public AudioSource ShotSplatSoundSource;
+    public AudioClip ShotSplatSoundEffect;
 
     // Update is called once per frame
     void Update()
@@ -50,6 +52,8 @@ public class ShotScript : MonoBehaviour
         {
             // Plays Splat Animation
             animator.SetTrigger("IsSplatting?");
+
+            ShotSplatSoundSource.PlayOneShot(ShotSplatSoundEffect);
 
             if (target == null) return;
             EnemyHealthSystemScript breadScript = target.GetComponent<EnemyHealthSystemScript>();
