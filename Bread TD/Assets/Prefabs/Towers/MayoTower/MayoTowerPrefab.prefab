@@ -219,7 +219,6 @@ MonoBehaviour:
   cost: 150
   sellValue: 100
   towerLevel: 0
-  shotAmount: 10
   Shot: {fileID: 5720070428662026715, guid: 158177d4ed962764dbfbb13dda2700fc, type: 3}
   aoe: 1
   poisonAmount: 0
