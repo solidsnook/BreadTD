@@ -20,8 +20,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1623411201869087070
-Transform:
+--- !u!224 &1623411201869087070
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -30,12 +30,17 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.18, y: 0.18, z: 0.18}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5654152086145561944}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 6, y: 10.16}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!58 &7856456068372877780
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -91,10 +96,18 @@ MonoBehaviour:
   cost: 25
   sellValue: 15
   towerLevel: 0
+  shotAmount: 5
   Shot: {fileID: 5720070428662026715, guid: 8a82d0c01b0651f4793d6c60d4ffa793, type: 3}
   aoe: 0
   poisonAmount: 0
   animator: {fileID: 8026836166193102311}
+  spriteList:
+  - {fileID: -709304924092702323, guid: 1b0002a8ff3ece248a49c42f10a7208a, type: 3}
+  - {fileID: 3445703448653327275, guid: c3490dd5e64d68c449accc1727806e0a, type: 3}
+  - {fileID: 5860317081097383589, guid: 64a721e6a73cd174e8780bc2f037dea5, type: 3}
+  - {fileID: 6595917032894898735, guid: 1bb806458bbaf4e44999db17bca2dc87, type: 3}
+  - {fileID: -6497415194789305181, guid: b980964156bd239448690291b8b8a3c7, type: 3}
+  - {fileID: 8110065880138775576, guid: 6c13d0151abfe504ba4b89a802515972, type: 3}
   ShootSoundSource: {fileID: 4132714145974368180}
   ShootSoundEffect: {fileID: 8300000, guid: c9a4d88fc9d5a3f49b2f76a2631043e0, type: 3}
 --- !u!95 &8026836166193102311
