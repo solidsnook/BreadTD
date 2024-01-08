@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -98,7 +99,13 @@ public class TowerManager : MonoBehaviour
     public void OpenSellScreen(GameObject Button)
     {
         SellScreenOBJ.SetActive(true);
+        GameObject SellImage = GameObject.Find("Sell Screen/Panel/Tower IMG");
+        GameObject SellText = GameObject.Find("Sell Screen/Panel/ValueText");
+        GameObject Tower = Button.GetComponentInChildren<ButtonPlacerScript>().OcupiedTower;
 
+        SellImage.GetComponent<Image>().sprite = Button.GetComponentInChildren<ButtonPlacerScript>().OcupiedTower.GetComponentInChildren<SpriteRenderer>().sprite;
+
+        //SellText.GetComponent<Text>().text = "Value:  Crumbs";
         SelectedButton = Button;
     }
 
