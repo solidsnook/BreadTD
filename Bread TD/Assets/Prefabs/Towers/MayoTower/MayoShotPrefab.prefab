@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  shotSpeed: 0
+  shotSpeed: 2
   Damage: 0
   aoeRange: 0
   poisonAmount: 0

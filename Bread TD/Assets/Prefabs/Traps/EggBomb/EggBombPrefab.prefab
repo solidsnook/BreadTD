@@ -307,7 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   aoe: 10
-  cost: 250
+  cost: 50
   fuseTime: 2
   animator: {fileID: 1051929103033810427}
   EggFuseSoundSource: {fileID: 5027804819737079209}

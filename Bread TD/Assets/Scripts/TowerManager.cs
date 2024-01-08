@@ -86,8 +86,17 @@ public class TowerManager : MonoBehaviour
     public void OpenBuyScreen(GameObject Button)
     {
         BuyScreenOBJ.SetActive(true);
+        GameObject KetchBuyText = GameObject.Find("BuyScreen/Panel/Ketchup/Ketchup Cost");
+        GameObject MustBuyText = GameObject.Find("BuyScreen/Panel/Mustard/MustardCost");
+        GameObject MayoBuyText = GameObject.Find("BuyScreen/Panel/Mayo/Mayo Cost");
+
+        KetchBuyText.GetComponent<TextMeshProUGUI>().text = "Value: 50 Crumbs";
+        MustBuyText.GetComponent<TextMeshProUGUI>().text = "Value: 90 Crumbs";
+        MayoBuyText.GetComponent<TextMeshProUGUI>().text = "Value: 150 Crumbs";
 
         SelectedButton = Button;
+
+
     }
 
     public void CloseBuyScreen()
@@ -100,12 +109,12 @@ public class TowerManager : MonoBehaviour
     {
         SellScreenOBJ.SetActive(true);
         GameObject SellImage = GameObject.Find("Sell Screen/Panel/Tower IMG");
-        GameObject SellText = GameObject.Find("Sell Screen/Panel/ValueText");
+        GameObject SellText = GameObject.Find("Sell Screen/Panel/Value Text");
         GameObject Tower = Button.GetComponentInChildren<ButtonPlacerScript>().OcupiedTower;
 
         SellImage.GetComponent<Image>().sprite = Button.GetComponentInChildren<ButtonPlacerScript>().OcupiedTower.GetComponentInChildren<SpriteRenderer>().sprite;
 
-        //SellText.GetComponent<Text>().text = "Value:  Crumbs";
+        SellText.GetComponent<TextMeshProUGUI>().text = "Value: " + Tower.GetComponent<TowerScript>().sellValue + " Crumbs";
         SelectedButton = Button;
     }
 

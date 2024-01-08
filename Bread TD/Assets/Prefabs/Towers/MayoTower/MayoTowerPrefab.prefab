@@ -365,9 +365,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8457e9e66a425f9468ff2747eaf15c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 5
   speed: 5
-  fireRate: 1
+  fireRate: 3
   attackRange: 30
   cost: 150
   sellValue: 100

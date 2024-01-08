@@ -95,7 +95,7 @@ MonoBehaviour:
   health: 20
   damageTaken: 0
   poisonAmount: 0
-  originalMaterial: {fileID: 0}
+  originalMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   overlayMaterial: {fileID: 2100000, guid: 07169b3de52c4b44bb2fd2ee79f162ff, type: 2}
   spriteRenderer: {fileID: 8961658715407183460}
   isPoisoned: 0

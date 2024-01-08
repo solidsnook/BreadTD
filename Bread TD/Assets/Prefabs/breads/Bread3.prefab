@@ -92,10 +92,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aaaad5298d5bba4480af0347fca7766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 2
   damageTaken: 0
   poisonAmount: 0
-  originalMaterial: {fileID: 0}
+  originalMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   overlayMaterial: {fileID: 2100000, guid: 07169b3de52c4b44bb2fd2ee79f162ff, type: 2}
   spriteRenderer: {fileID: 7570453742007956293}
   isPoisoned: 0

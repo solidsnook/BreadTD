@@ -87,10 +87,11 @@ public class EnemyHealthSystemScript : MonoBehaviour
         if (damageTaken > 0)
         {
             //Debug.Log("Taken Mustard Damage");
-            if (poisonCounter <= poisonAmount)
+            if (poisonCounter <= poisonAmount) //tick dmg
             {
-                if (time >= poisonTimer)
+                if (time >= poisonTimer) //poison time
                 {
+                    isPoisoned = true;
                     health -= damageTaken;
 
                     // Assign the overlay material to the renderer.
@@ -102,8 +103,10 @@ public class EnemyHealthSystemScript : MonoBehaviour
             }
             else
             {
+                poisonCounter = 0;
                 damageTaken = 0;
                 isPoisoned = false;
+                spriteRenderer.material = originalMaterial;
             }
                 
         }

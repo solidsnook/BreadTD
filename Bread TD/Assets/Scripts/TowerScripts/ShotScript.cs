@@ -48,7 +48,7 @@ public class ShotScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.gameObject == target)
         {
             // Plays Splat Animation
             animator.SetTrigger("IsSplatting?");
@@ -64,7 +64,6 @@ public class ShotScript : MonoBehaviour
             {
                 breadScript.damageTaken = Damage;
                 breadScript.poisonAmount = poisonAmount;
-                breadScript.isPoisoned = true;
             }
         
             if (aoeRange > 0)

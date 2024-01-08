@@ -23,7 +23,7 @@ public class TowerScript : MonoBehaviour
     public GameObject Shot;         // Prefab for the Ketchup Shot
     public float aoe;               // How big the area of damage is 
     public int poisonAmount;        // How many times the damage is taken
-    private GameObject enemy;
+    private List<GameObject> enemyList;
     private float time = 0f;
     public Animator animator;
     public Slider shotBar;
@@ -39,6 +39,8 @@ public class TowerScript : MonoBehaviour
 
     void Start()
     {
+        enemyList = new List<GameObject>();
+
         shotBar.maxValue = shotAmount;
         fill.color = gradient.Evaluate(1f);
         //towerManager.SelectedButton = CurrentButton;
@@ -55,7 +57,7 @@ public class TowerScript : MonoBehaviour
         // Updates the attackRange variable to the radius of the collider so it can be easily changed
         GetComponent<CircleCollider2D>().radius = attackRange;
 
-        if (enemy != null)
+        if (enemyList.Count != 0)
         {
             // Delay until next shot
             if (time >= fireRate)
@@ -98,7 +100,7 @@ public class TowerScript : MonoBehaviour
             // Save speed to new shot script
             shot.shotSpeed = speed;
             shot.Damage = damage;
-            shot.target = enemy;
+            shot.target = enemyList[0];
             shot.aoeRange = aoe;
             shot.poisonAmount = poisonAmount;
 
@@ -106,12 +108,13 @@ public class TowerScript : MonoBehaviour
         }
     }
 
-    void OnTriggerStay2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
+
         // Finds the enemy thats in range and with the tag "Enemy"
         if (collision.CompareTag("Enemy"))
         {
-            enemy = collision.gameObject;
+            enemyList.Add(collision.gameObject);
         }
     }
 
@@ -120,7 +123,7 @@ public class TowerScript : MonoBehaviour
         // Reset the enemy reference when it exits the trigger.
         if (collision.CompareTag("Enemy"))
         {
-            enemy = null;
+            enemyList.Remove(collision.gameObject);
         }
     }
 }
