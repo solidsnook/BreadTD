@@ -91,8 +91,8 @@ public class TowerManager : MonoBehaviour
         GameObject MayoBuyText = GameObject.Find("BuyScreen/Panel/Mayo/Mayo Cost");
 
         KetchBuyText.GetComponent<TextMeshProUGUI>().text = "Value: 50 Crumbs";
-        MustBuyText.GetComponent<TextMeshProUGUI>().text = "Value: 90 Crumbs";
-        MayoBuyText.GetComponent<TextMeshProUGUI>().text = "Value: 150 Crumbs";
+        MustBuyText.GetComponent<TextMeshProUGUI>().text = "Value: 75 Crumbs";
+        MayoBuyText.GetComponent<TextMeshProUGUI>().text = "Value: 115 Crumbs";
 
         SelectedButton = Button;
 

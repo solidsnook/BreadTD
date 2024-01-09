@@ -21,6 +21,8 @@ public class UI_Menu_Manager : MonoBehaviour
     public GameObject bread2Des;
     public GameObject bread3Des;
     public GameObject bread4Des;
+    public GameObject sellDes;
+
 
     public Camera camera;
 
@@ -39,6 +41,7 @@ public class UI_Menu_Manager : MonoBehaviour
         TowersMenu.SetActive(false);
         StatsMenu.SetActive(false);
         LevelMenu.SetActive(false);
+        sellDes.SetActive((false));
 
         if (PlayerPrefs.HasKey("LevelProgression") == false) PlayerPrefs.SetInt("LevelProgression", 1);
     }
@@ -153,6 +156,12 @@ public class UI_Menu_Manager : MonoBehaviour
     {
         bread4Des.SetActive(true);
     }
+
+    public void SellDescription()
+    {
+        sellDes.SetActive(true);
+    }
+
     public void CloseDescription(GameObject Description)
     {
         Debug.Log("closing description");

@@ -268,10 +268,10 @@ MonoBehaviour:
   speed: 5
   fireRate: 2
   attackRange: 30
-  cost: 90
+  cost: 75
   sellValue: 35
   towerLevel: 0
-  shotAmount: 50
+  shotAmount: 25
   Shot: {fileID: 5720070428662026715, guid: dd9a1b788c065804db7f037817d9be00, type: 3}
   aoe: 0
   poisonAmount: 5
