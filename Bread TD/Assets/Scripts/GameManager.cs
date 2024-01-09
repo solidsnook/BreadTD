@@ -75,6 +75,8 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate()
     {
+        PlayerPrefs.SetFloat("TimePlayed", PlayerPrefs.GetFloat("TimePlayed") + Time.deltaTime);
+
         //check if wave finsihed
         if (AliveBreads.Count <= 0 && WaveFinished)
         {
@@ -88,18 +90,15 @@ public class GameManager : MonoBehaviour
 
    public void finishLevel()
     {
-        //////TEMPORARY Check if menu scene: Remove when adding end lvl screen//////
         if(CurrentScene == 0)
         {
             return;
         }
-        PlayTime = Time.deltaTime - PlayTime;
-        PlayerPrefs.SetInt("TimePlayed", PlayerPrefs.GetInt("TimePlayed") + (int)PlayTime);
-        //////TEMPORARY: next level loaded after final level done need to remove when adding the end lvl screen//////
         int ActiveSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
         //unlocks next level
-        PlayerPrefs.SetInt("LevelProgression", ActiveSceneIndex);
         ActiveSceneIndex++;
+        PlayerPrefs.SetInt("LevelProgression", ActiveSceneIndex);
         SceneManager.LoadScene(ActiveSceneIndex);
 
     }
@@ -113,10 +112,10 @@ public class GameManager : MonoBehaviour
             Debug.Log("all Waves Finished");
             int ActiveSceneIndex = SceneManager.GetActiveScene().buildIndex;
             ActiveSceneIndex++;
-            PlayerPrefs.SetInt("LevelProgression", ActiveSceneIndex);
             LevelFinishScreen.SetActive(true);
+            PlayerPrefs.SetInt("LevelProgression", ActiveSceneIndex);
             //finishLevel();
-            
+
             return;
         }
 

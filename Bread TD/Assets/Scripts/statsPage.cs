@@ -54,8 +54,7 @@ public class statsPage : MonoBehaviour
         if (PlayerPrefs.HasKey("CrumbsSpent") == false) PlayerPrefs.SetInt("CrumbsSpent", 0);
         if (PlayerPrefs.HasKey("TowersPlaced") == false) PlayerPrefs.SetInt("TowersPlaced", 0);
         if (PlayerPrefs.HasKey("LifeLost") == false) PlayerPrefs.SetInt("LifeLost", 0);
-        if (PlayerPrefs.HasKey("TimePlayed") == false) PlayerPrefs.SetInt("TimePlayed", 0);
-        if (PlayerPrefs.HasKey("LevelsCompleted") == false) PlayerPrefs.SetInt("LevelsCompleted", 0);
+        if (PlayerPrefs.HasKey("TimePlayed") == false) PlayerPrefs.SetFloat("TimePlayed", 0);
     }
 
     public void InitiateStats()
@@ -76,11 +75,12 @@ public class statsPage : MonoBehaviour
         LifeLostTxt.GetComponent<TextMeshProUGUI>().text = "Life Lost: " + PlayerPrefs.GetInt("LifeLost");
         LifeBadge.GetComponent<Image>().sprite = StageBadgeCheck(PlayerPrefs.GetInt("LifeLost"), LifeCopper, LifeSilver, LifeGold);
 
-        TimePlayedTxt.GetComponent<TextMeshProUGUI>().text = "Time Played: " + PlayerPrefs.GetInt("TimePlayed");
-        TimeBadge.GetComponent<Image>().sprite = StageBadgeCheck(PlayerPrefs.GetInt("TimePlayed"), TimeCopper, TimeSilver, TimeGold);
+        TimePlayedTxt.GetComponent<TextMeshProUGUI>().text = "Time Played: " + PlayerPrefs.GetFloat("TimePlayed");
+        TimeBadge.GetComponent<Image>().sprite = StageBadgeCheck((int)PlayerPrefs.GetFloat("TimePlayed"), TimeCopper, TimeSilver, TimeGold);
 
-        LevelsCompletedTxt.GetComponent<TextMeshProUGUI>().text = "Levels Completed: " + PlayerPrefs.GetInt("LevelsCompleted");
-        LevelsBadge.GetComponent<Image>().sprite = StageBadgeCheck(PlayerPrefs.GetInt("LevelsCompleted"), LevelsCopper, LevelsSilver, LevelsGold);
+        //level progression needs to be -1 becouse it displayes the current lvl you have unlocked
+        LevelsCompletedTxt.GetComponent<TextMeshProUGUI>().text = "Levels Completed: " + (PlayerPrefs.GetInt("LevelProgression") - 1);
+        LevelsBadge.GetComponent<Image>().sprite = StageBadgeCheck(PlayerPrefs.GetInt("LevelProgression") - 1, LevelsCopper, LevelsSilver, LevelsGold);
     }
 
     Sprite StageBadgeCheck(int statAmount, int copper, int silver, int gold)

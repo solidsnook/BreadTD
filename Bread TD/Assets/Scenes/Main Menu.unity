@@ -1735,7 +1735,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3824,7 +3824,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -5361,7 +5361,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -6270,7 +6270,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.8156863}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -6801,6 +6801,13 @@ MonoBehaviour:
   bread3Des: {fileID: 32839997}
   bread4Des: {fileID: 1100234452}
   sellDes: {fileID: 2046031928}
+  levelButtons:
+  - {fileID: 731152671}
+  - {fileID: 665362736}
+  - {fileID: 2125022486}
+  - {fileID: 478299808}
+  - {fileID: 1293248450}
+  - {fileID: 208743409}
   camera: {fileID: 1949568519}
 --- !u!1 &862257836
 GameObject:
@@ -9204,7 +9211,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -10868,7 +10875,6 @@ GameObject:
   - component: {fileID: 1580276452}
   - component: {fileID: 1580276451}
   - component: {fileID: 1580276450}
-  - component: {fileID: 1580276449}
   m_Layer: 5
   m_Name: Level Select Page
   m_TagString: Untagged
@@ -10876,53 +10882,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1580276449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580276448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 221a94e13e607534780d4f463a6efccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BreadsDestroyedTxt: {fileID: 0}
-  BreadCopper: 500
-  BreadSilver: 1000
-  BreadGold: 2500
-  BreadsBadge: {fileID: 0}
-  CrumbsSpentTxt: {fileID: 0}
-  CrumbsCopper: 1000
-  CrumbsSilver: 5000
-  CrumbsGold: 10000
-  CrumbsBadge: {fileID: 0}
-  TowersPlacedTxt: {fileID: 0}
-  TowersCopper: 20
-  TowersSilver: 50
-  TowersGold: 150
-  TowersBadge: {fileID: 0}
-  LifeLostTxt: {fileID: 0}
-  LifeCopper: 10
-  LifeSilver: 25
-  LifeGold: 50
-  LifeBadge: {fileID: 0}
-  TimePlayedTxt: {fileID: 0}
-  TimeCopper: 600
-  TimeSilver: 1200
-  TimeGold: 3000
-  TimeBadge: {fileID: 0}
-  LevelsCompletedTxt: {fileID: 0}
-  LevelsCopper: 1
-  LevelsSilver: 2
-  LevelsGold: 5
-  LevelsBadge: {fileID: 0}
-  CopperBadge: {fileID: 21300000, guid: 917f3378f2d31a04b81d3eefa2702d9d, type: 3}
-  SilverBadge: {fileID: 21300000, guid: c8e74a2c04d88be478882c9aa21e8f01, type: 3}
-  GoldBadge: {fileID: 21300000, guid: 9ee9634b49c72af499fa88e5aff1204f, type: 3}
-  BasicBadge: {fileID: 21300000, guid: 8eebc957e52a88040ba777fd3ef90b63, type: 3}
-  SettingsPage: {fileID: 4960433}
 --- !u!114 &1580276450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13944,7 +13903,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -14863,9 +14822,9 @@ MonoBehaviour:
   TimeGold: 3000
   TimeBadge: {fileID: 1588822968}
   LevelsCompletedTxt: {fileID: 531221094}
-  LevelsCopper: 1
-  LevelsSilver: 2
-  LevelsGold: 5
+  LevelsCopper: 2
+  LevelsSilver: 4
+  LevelsGold: 6
   LevelsBadge: {fileID: 370631236}
   CopperBadge: {fileID: 21300000, guid: 917f3378f2d31a04b81d3eefa2702d9d, type: 3}
   SilverBadge: {fileID: 21300000, guid: c8e74a2c04d88be478882c9aa21e8f01, type: 3}

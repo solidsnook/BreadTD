@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UI_Menu_Manager : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class UI_Menu_Manager : MonoBehaviour
     public GameObject bread4Des;
     public GameObject sellDes;
 
+    public List<GameObject> levelButtons;
 
     public Camera camera;
 
@@ -44,6 +46,7 @@ public class UI_Menu_Manager : MonoBehaviour
         sellDes.SetActive((false));
 
         if (PlayerPrefs.HasKey("LevelProgression") == false) PlayerPrefs.SetInt("LevelProgression", 1);
+
     }
 
     private void RescaleCamera()
@@ -120,6 +123,23 @@ public class UI_Menu_Manager : MonoBehaviour
     {
         MainMenu.SetActive(false);
         menu.SetActive(true);
+
+        //set levels locked visuals
+        for (int index = 0; index < levelButtons.Count; index++)
+        {
+            if ((PlayerPrefs.GetInt("LevelProgression")) > index)
+            {
+                Debug.Log("interactable: " + index); 
+
+                levelButtons[index].GetComponent<Button>().interactable = true;
+            }
+            else
+            {
+                levelButtons[index].GetComponent<Button>().interactable = false;
+                Debug.Log("Not Interactable: " + index);
+            }
+
+        }
     }
 
     public void KetchupDescription()
