@@ -9336,7 +9336,7 @@ MonoBehaviour:
   SellScreenOBJ: {fileID: 1170199328}
   spawnedTower: {fileID: 0}
   eggBomb: {fileID: 6981735284934616146, guid: 65f23db1355e72f4b8e7db9555869c44, type: 3}
-  targetPoint: {fileID: 0}
+  targetPoint: {fileID: 1675376071}
 --- !u!1 &1613059002
 GameObject:
   m_ObjectHideFlags: 0

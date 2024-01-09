@@ -96,9 +96,6 @@ public class GameManager : MonoBehaviour
         }
         int ActiveSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-        //unlocks next level
-        ActiveSceneIndex++;
-        PlayerPrefs.SetInt("LevelProgression", ActiveSceneIndex);
         SceneManager.LoadScene(ActiveSceneIndex);
 
     }
@@ -112,8 +109,14 @@ public class GameManager : MonoBehaviour
             Debug.Log("all Waves Finished");
             int ActiveSceneIndex = SceneManager.GetActiveScene().buildIndex;
             ActiveSceneIndex++;
+
+            if (ActiveSceneIndex >= PlayerPrefs.GetInt("LevelProgression"))
+            {
+                PlayerPrefs.SetInt("LevelProgression", ActiveSceneIndex);
+            }
+
             LevelFinishScreen.SetActive(true);
-            PlayerPrefs.SetInt("LevelProgression", ActiveSceneIndex);
+
             //finishLevel();
 
             return;

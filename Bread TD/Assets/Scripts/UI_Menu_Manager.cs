@@ -188,6 +188,12 @@ public class UI_Menu_Manager : MonoBehaviour
         Description.SetActive(false);
     }
 
+    public void Cheat()
+    {
+        //unlock all levels
+        PlayerPrefs.SetInt("LevelProgression", 6);
+    }
+
     public void QuitApplication()
     {
         Application.Quit();
